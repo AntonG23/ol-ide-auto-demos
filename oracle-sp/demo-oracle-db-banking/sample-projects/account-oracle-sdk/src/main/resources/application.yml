@@ -1,0 +1,10 @@
+ol:
+  storedproc:
+    project:
+      accountOracleSdk:
+        url: jdbc:oracle:thin:@//oracle.openlegacy.com/ORCL
+        driverClassName: oracle.jdbc.driver.OracleDriver
+        username: openlegacy_team
+        password: '{cipher}5c341ba85fc283ddcf6efebec6fba6c94da26c7e8064e49d008d17928228153d'
+  license:
+    key: eyJhbGciOiJSUzI1NiJ9.eyJwcm9kdWN0Ijoib3BlbmxlZ2FjeS1jb3JlIiwic3ViIjoib2wiLCJpc3N1ZWRfYXQiOiIyMDIxLTAzLTMxVDExOjE1OjQ3LjQwOFoiLCJ2YWxpZF9mb3IiOjkwLCJjdXN0b21lcl9uYW1lIjoiLS1uYW1lIGRlbW9zIn0.CZILA_rxXSba8Yk__fW_GZf82tJ_6R-BAH8zDnxNBC8Ch2-i_UkvhHU762W1v12LJr_IXHiWtwH6fn9Cg4T9Ti5ztzN5wM6ANOsXM0L4Dz26_pgC6AQgi3bdVQUfJM8mDFquOkODEtPdtcTUC5FVx37T-z16AJjuYwiQ6ad9WxFA5kMUBUWytc_uIyPXdSq8OVS7R_le6LlOK-m4GI6MZEmSRL1h205wJW1H-4s61acl-T6FFu3QQPsuMPNZlZfxP1-yvyjFkyK7e2Yj2sftEFNuHgBa-xrPYVBXWtQ04EX3kb06OSf48tEsFi3xoJzPAUXoFNUkuqbulWSXB7qSGQ
