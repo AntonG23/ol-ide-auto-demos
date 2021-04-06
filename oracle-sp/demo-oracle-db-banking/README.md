@@ -3,7 +3,7 @@
 ### Introduction 
 This demo shows generation of Java models from **ORACLE SQL Stored Procedures** using OpenLegacy IDE's built in **ORACLE SQL Stored Procedures**, and how to expose it as a **REST API**.
 
-![Oracle Stored Procedure](/assets/images/oracle-sp.png)
+![Oracle Stored Procedure](./assets/images/oracle-sp.png)
 
 ## Pre-Requirments
 - OpenLegacy IDE 4.6.12 (Full installation including JDK and all Maven dependencies).
@@ -34,7 +34,7 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
    - **Database Password:** `gp#6KN!yBi`
 7. Click **Finish**
 
-![How to create SDK Project](/assets/images/create-sp-bank-project.gif)
+![How to create SDK Project](./assets/images/create-sp-bank-project.gif)
 
 
 ## Step 2 – Generate Java Model (Entity) from Stored Procedure
@@ -50,7 +50,7 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
 7. Click **OK**.
 8. Repit steps 1-7 for the following **Stored Procedures:** `GET_ALL_CUSTOMER_BANK_ACCOUNTS`, `OPEN_ACCOUNT`, `UPDATE_ACCOUNT`, `GET_ACCOUNT`, `DELETE_ACCOUNT`. 
 
-![How to fetch stored procedure](/assets/images/importReset.gif)
+![How to fetch stored procedure](./assets/images/importReset.gif)
 
 ## Step 3 – Create a JUnit Test
 
@@ -67,33 +67,33 @@ We can extend this test suite with additional unit tests to validate our connect
 
 - **Open Account** 
 1. Go to `/account-oracle-sdk/src/test/resources/mock/GetAccountTest/test_getAccountTest_usecase_1.input.json`
-And replace it with the following JSON: [open-account-input json](/assets/resources/test_openAccountTest_usecase_1.input.json). 
-2. Go to `/account-oracle-sdk/src/test/resources/mock/GetAccountTest/test_getAccountTest_usecase_1.output.json`  And replace it with the following JSON: [open-account-output json](/assets/resources/test_openAccountTest_usecase_1.output.json). 
+And replace it with the following JSON: [open-account-input json](./assets/resources/test_openAccountTest_usecase_1.input.json). 
+2. Go to `/account-oracle-sdk/src/test/resources/mock/GetAccountTest/test_getAccountTest_usecase_1.output.json`  And replace it with the following JSON: [open-account-output json](./assets/resources/test_openAccountTest_usecase_1.output.json). 
 
 3. Go to `OpenAccountTest` and comment the second test. 
 4. Right-cllck on the test and `run as JUnit test`. 
 
 - **Update Account** 
 1. Go to `/account-oracle-sdk/src/test/resources/mock/UpdateAccountTest/test_updateAccountTest_usecase_1.input.json`
-And replace it with the following JSON: [update-account-input json](/assets/resources/test_updateAccountTest_usecase_1.output.json). 
-2. Go to `/account-oracle-sdk/src/test/resources/mock/UpdateAccountTest/test_updateAccountTest_usecase_1.output.json`  And replace it with the following JSON: [update-account-output json](/assets/resources/test_updateAccountTest_usecase_1.output.json). 
+And replace it with the following JSON: [update-account-input json](./assets/resources/test_updateAccountTest_usecase_1.output.json). 
+2. Go to `/account-oracle-sdk/src/test/resources/mock/UpdateAccountTest/test_updateAccountTest_usecase_1.output.json`  And replace it with the following JSON: [update-account-output json](./assets/resources/test_updateAccountTest_usecase_1.output.json). 
 
 3. Go to `UpdateAccountTest` and comment the second test. 
 4. Right-click on the test and `run as JUnit test`. 
 
 - **Get Account**
 
-1. Go to `/account-oracle-sdk/src/test/resources/mock/GetAccountTest/test_getAccountTest_usecase_1.input.json` And replace it with the following JSON: [get-account-input json](/assets/resources/test_getAccountTest_usecase_1.input.json). 
-2. Go to `/account-oracle-sdk/src/test/resources/mock/GetAccountTest/test_getAccountTest_usecase_1.output.json` And replace it with the following JSON: [get-account-output json](/assets/resources/test_getAccountTest_usecase_1.output.json). 
+1. Go to `/account-oracle-sdk/src/test/resources/mock/GetAccountTest/test_getAccountTest_usecase_1.input.json` And replace it with the following JSON: [get-account-input json](./assets/resources/test_getAccountTest_usecase_1.input.json). 
+2. Go to `/account-oracle-sdk/src/test/resources/mock/GetAccountTest/test_getAccountTest_usecase_1.output.json` And replace it with the following JSON: [get-account-output json](./assets/resources/test_getAccountTest_usecase_1.output.json). 
 3. Go to `GetAccountTest` and comment the second test. 
 4. Right-click on the project and `run as JUnit test`. 
 
 - **Delete Account** 
-1. Go to `/account-oracle-sdk/src/test/resources/mock/DeleteAccountTest/test_deleteAccountTest_usecase_1.input.json` And replace it with the following JSON: [delete-account-input json](/assets/resources/test_deleteAccountTest_usecase_1.input.json). 
+1. Go to `/account-oracle-sdk/src/test/resources/mock/DeleteAccountTest/test_deleteAccountTest_usecase_1.input.json` And replace it with the following JSON: [delete-account-input json](./assets/resources/test_deleteAccountTest_usecase_1.input.json). 
 3. Go to `DeleteAccountTest` and comment the second test. 
 4. Right-click on the project and `run as JUnit test`. 
 
-![How to fetch stored procedure](/assets/images/updateJunitTest.gif)
+![How to fetch stored procedure](./assets/images/updateJunitTest.gif)
 
 
 ## Step 4 – Create APIs from SDK
@@ -104,7 +104,7 @@ And replace it with the following JSON: [update-account-input json](/assets/reso
 3. Click at the **Default Package** field, to automatically fill it up.
 4. Press Next and add the SDK project that was created in **Step 1**  as the reference project.
 
-![How to create api](/assets/images/create-api.gif)
+![How to create api](./assets/images/create-api.gif)
 
 5. Create services from the SDK's entities. 
 - **Reset Accounts**
@@ -142,7 +142,7 @@ And replace it with the following JSON: [update-account-input json](/assets/reso
    - Set `DeleteAccount` as output.
    - Click **OK**.
 
-![How to generate api](/assets/images/generate-api-from-sdk.gif)
+![How to generate api](./assets/images/generate-api-from-sdk.gif)
 
 
 ## Step 5 - Run and Test your API
@@ -157,16 +157,16 @@ And replace it with the following JSON: [update-account-input json](/assets/reso
 ​`/api​/resetaccount` → Try it out and click **Execute**.
 -  **Click** on the  
 ​`/api/getallcustomeraccountlist` → Try it out and click **Execute**.
-- **Click** on the  `/api/openaccount` → Try it out, use the following json as input -  [open-account-input json](/assets/resources/test_openAccountTest_usecase_1.input.json), and **Execute**. 
--  **Click** on the  `/api​/updateaccount` Try it out, use the following json as input -  [update-account-input json](/assets/resources/test_updateAccountTest_usecase_1.output.json) , and **Execute**. 
+- **Click** on the  `/api/openaccount` → Try it out, use the following json as input -  [open-account-input json](./assets/resources/test_openAccountTest_usecase_1.input.json), and **Execute**. 
+-  **Click** on the  `/api​/updateaccount` Try it out, use the following json as input -  [update-account-input json](./assets/resources/test_updateAccountTest_usecase_1.output.json) , and **Execute**. 
 
--  **Click** on the `/api​/getaccount` Try it out, use the following json as input - [get-account-output json](/assets/resources/test_getAccountTest_usecase_1.output.json), and **Execute**. 
+-  **Click** on the `/api​/getaccount` Try it out, use the following json as input - [get-account-output json](./assets/resources/test_getAccountTest_usecase_1.output.json), and **Execute**. 
 
-- **Click** on the `/api/deleteaccount` Try it out, use the following json as input - [delete-account-input json](/assets/resources/test_deleteAccountTest_usecase_1.input.json)., and **Execute**. 
+- **Click** on the `/api/deleteaccount` Try it out, use the following json as input - [delete-account-input json](./assets/resources/test_deleteAccountTest_usecase_1.input.json)., and **Execute**. 
 
    - You should see successful response returned directly from the Oracle SQL Server Stored Procedure!
 
-   ![How to generate api](/assets/images/runApi.gif)
+   ![How to generate api](./assets/images/runApi.gif)
 
 ## Summary
 

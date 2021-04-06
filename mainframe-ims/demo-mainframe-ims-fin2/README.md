@@ -11,8 +11,8 @@ This demo shows generation of Java models from a **Credit Cards** COBOL file usi
 
 ## Demo Resources
 
-- [IMSFIN2.in.cpy](/assets/resources/IMSFIN2.in.cpy)
-- [IMSFIN2.out.cpy](/assets/resources/IMSFIN2.out.cpy)
+- [IMSFIN2.in.cpy](./assets/resources/IMSFIN2.in.cpy)
+- [IMSFIN2.out.cpy](./assets/resources/IMSFIN2.out.cpy)
   
 ## Demo Definition
 
@@ -42,7 +42,7 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
 7. Open application.yaml file located at `src/main/resources`, add a property: `output-offset: 0` and save the file
 8. Open design-time.properties file located at `mainframe-ims-sdk`, change the **generateCopyAsEntity** value to `true` and save the file
     
-![Create SDK](/assets/images/createSDK.gif)
+![Create SDK](./assets/images/createSDK.gif)
 
 ## Step 2 – Generate Java Model (Entity) from CreditCards
 > Now, we will create Java models out of our Credit Cards file we wish to expose.
@@ -54,7 +54,7 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
 3. Mark **Generate JUnit test**
 4. Press **Ok**.
 
-![Generate Entity](/assets/images/generateEntity.gif)
+![Generate Entity](./assets/images/generateEntity.gif)
 
 ## Step 3 – Create a JUnit Test
 
@@ -117,7 +117,7 @@ We can extend this test suite with additional unit tests to validate our connect
 4. Go to `src/test/java/tests/Imsfin2Test.java` and comment out `imsfin2TestUseCaseTest_2`.  
 5. Run the JUnit by Right Clicking on `Imsfin2Test.java` → Run As → JUnit Test.
 
-![Create JUnit](/assets/images/createJUnit.gif)
+![Create JUnit](./assets/images/createJUnit.gif)
 
 ## Step 4 – Create APIs from SDK
 
@@ -133,7 +133,7 @@ We can extend this test suite with additional unit tests to validate our connect
 9. Add **outputMsg** to the **Output box**
 10. Click **Ok**
 
-![Create API](/assets/images/createAPI.gif)
+![Create API](./assets/images/createAPI.gif)
 
 ## Step 5 - Run and Test your API
 
@@ -188,7 +188,7 @@ We can extend this test suite with additional unit tests to validate our connect
     }
    ```
 
-![Alt Text](/assets/images/swagger.gif)
+![Alt Text](./assets/images/swagger.gif)
 
 ## Summary
 

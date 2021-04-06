@@ -10,18 +10,18 @@ This demo shows generation of Java models from a **copy book** using OpenLegacy 
 - Internet Connection
 
 ## Demo Resources
-- [DACTIM8.in.cpy](/assets/resources/DACTIM8.in.cpy)
-- [DACTIM8.out.cpy](/assets/resources/DACTIM8.out.cpy)
-- [GACTIM8.in.cpy](/assets/resources/GACTIM8.in.cpy)
-- [GACTIM8.out.cpy](/assets/resources/GACTIM8.out.cpy)
-- [LACTIM8.in.cpy](/assets/resources/LACTIM8.in.cpy)
-- [LACTIM8.out.cpy](/assets/resources/LACTIM8.out.cpy)
-- [RACTIM8.in.cpy](/assets/resources/RACTIM8.in.cpy)
-- [RACTIM8.out.cpy](/assets/resources/RACTIM8.out.cpy)
-- [UACTIM8.in.cpy](/assets/resources/UACTIM8.in.cpy)
-- [UACTIM8.out.cpy](/assets/resources/UACTIM8.out.cpy)
-- [OACTIM8.in.cpy](/assets/resources/OACTIM8.in.cpy)
-- [OACTIM8.out.cpy](/assets/resources/OACTIM8.out.cpy)
+- [DACTIM8.in.cpy](./assets/resources/DACTIM8.in.cpy)
+- [DACTIM8.out.cpy](./assets/resources/DACTIM8.out.cpy)
+- [GACTIM8.in.cpy](./assets/resources/GACTIM8.in.cpy)
+- [GACTIM8.out.cpy](./assets/resources/GACTIM8.out.cpy)
+- [LACTIM8.in.cpy](./assets/resources/LACTIM8.in.cpy)
+- [LACTIM8.out.cpy](./assets/resources/LACTIM8.out.cpy)
+- [RACTIM8.in.cpy](./assets/resources/RACTIM8.in.cpy)
+- [RACTIM8.out.cpy](./assets/resources/RACTIM8.out.cpy)
+- [UACTIM8.in.cpy](./assets/resources/UACTIM8.in.cpy)
+- [UACTIM8.out.cpy](./assets/resources/UACTIM8.out.cpy)
+- [OACTIM8.in.cpy](./assets/resources/OACTIM8.in.cpy)
+- [OACTIM8.out.cpy](./assets/resources/OACTIM8.out.cpy)
 
 ## Demo Definition
 
@@ -49,7 +49,7 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
    - **Mark the Racf Enabled and set Racf **User** : `DEMO001`, **Password** : `Legacy`, and **GroupId**: `GROUP1`**
 6. Click **Finish**
 
-![Create SDK](/assets/images/account-ims-sdk.gif)
+![Create SDK](./assets/images/account-ims-sdk.gif)
 
 ## Step 2 – Generate Java Model (Entity) from copybook
 > Now, we will create Java models out of our copy book file we wish to expose.
@@ -95,7 +95,7 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
   - Click **OK**. 
 
 
-![Create SDK](/assets/images/account-ims-entity.gif)
+![Create SDK](./assets/images/account-ims-entity.gif)
 
 ## Step 3 – Create the JUnits Test
 
@@ -113,44 +113,44 @@ In order to reuse the test you can add the following to the test.
 
 
 - **RACTIM8**
-   - Go to `/account-ims-sdk/src/test/resources/mock/Ractim8Test/test_ractim8Test_usecase_1.input.json` and replace it with the follwoing [reset-accounts-input json](/assets/resources/test_ractim8Test_usecase_1.input.json). 
-  -  Go to `/account-ims-sdk/src/test/resources/mock/Ractim8Test/test_ractim8Test_usecase_1.output.json`  and replace it with the following [reset-accounts-output json](/assets/resources/test_ractim8Test_usecase_1.output.json).  
+   - Go to `/account-ims-sdk/src/test/resources/mock/Ractim8Test/test_ractim8Test_usecase_1.input.json` and replace it with the follwoing [reset-accounts-input json](./assets/resources/test_ractim8Test_usecase_1.input.json). 
+  -  Go to `/account-ims-sdk/src/test/resources/mock/Ractim8Test/test_ractim8Test_usecase_1.output.json`  and replace it with the following [reset-accounts-output json](./assets/resources/test_ractim8Test_usecase_1.output.json).  
   - Go to `/account-ims-sdk/src/test/java/tests/Ractim8Test.java`, comment the second test.
   - Right-click on the test → Run as JUnit test. 
 
 
 - **LACTIM8**
-  -  Go to `/account-ims-sdk/src/test/resources/mock/Lactim8Test/test_Lactim8Test_usecase_1.output.json`  and replace it with the following [get-all-accounts-output json](/assets/resources/test_Lactim8Test_usecase_1.output.json). 
+  -  Go to `/account-ims-sdk/src/test/resources/mock/Lactim8Test/test_Lactim8Test_usecase_1.output.json`  and replace it with the following [get-all-accounts-output json](./assets/resources/test_Lactim8Test_usecase_1.output.json). 
   - Go to `/account-ims-sdk/src/test/java/tests/Lactim8Test.java`,    comment the second test.
   - Right-click on the test → Run as JUnit test. 
 
 - **OACTIM8**
-   - Go to `/account-ims-sdk/src/test/resources/mock/Oactim8Test/test_oactim8Test_usecase_1.input.json` and replace it with the follwoing [open-account-input json](/assets/resources/test_oactim8Test_usecase_1.input.json). 
-  -  Go to `/account-ims-sdk/src/test/resources/mock/Oactim8Test/test_oactim8Test_usecase_1.output.json`  and replace it with the following [open-account-output json](/assets/resources/test_oactim8Test_usecase_1.output.json).  
+   - Go to `/account-ims-sdk/src/test/resources/mock/Oactim8Test/test_oactim8Test_usecase_1.input.json` and replace it with the follwoing [open-account-input json](./assets/resources/test_oactim8Test_usecase_1.input.json). 
+  -  Go to `/account-ims-sdk/src/test/resources/mock/Oactim8Test/test_oactim8Test_usecase_1.output.json`  and replace it with the following [open-account-output json](./assets/resources/test_oactim8Test_usecase_1.output.json).  
   - Go to `/account-ims-sdk/src/test/java/tests/Oactim8Test.java`, comment the second test.
   - Right-click on the test → Run as JUnit test. 
 
 
 - **UACTIM8**
-   - Go to `/account-ims-sdk/src/test/resources/mock/Uactim8Test/test_uactim8Test_usecase_1.input.json` and replace it with the follwoing [update-account-input json](/assets/resources/test_uactim8Test_usecase_1.input.json). 
-  -  Go to `/account-ims-sdk/src/test/resources/mock/Uactim8Test/test_uactim8Test_usecase_1.output.json`  and replace it with the following [update-account-output json](/assets/resources/test_uactim8Test_usecase_1.output.json).  
+   - Go to `/account-ims-sdk/src/test/resources/mock/Uactim8Test/test_uactim8Test_usecase_1.input.json` and replace it with the follwoing [update-account-input json](./assets/resources/test_uactim8Test_usecase_1.input.json). 
+  -  Go to `/account-ims-sdk/src/test/resources/mock/Uactim8Test/test_uactim8Test_usecase_1.output.json`  and replace it with the following [update-account-output json](./assets/resources/test_uactim8Test_usecase_1.output.json).  
   - Go to `/account-ims-sdk/src/test/java/tests/Uactim8Test.java`, comment the second test.
   - Right-click on the test → Run as JUnit test. 
   
 - **GACTIM8**
-   - Go to `/account-ims-sdk/src/test/resources/mock/Gactim8Test/test_gactim8Test_usecase_1.input.json` and replace it with the follwoing [get-account-input json](/assets/resources/test_gactim8Test_usecase_1.input.json). 
-  -  Go to `/account-ims-sdk/src/test/resources/mock/Gactim8Test/test_gactim8Test_usecase_1.output.json`  and replace it with the following [get-account-output json](/assets/resources/test_gactim8Test_usecase_1.output.json).  
+   - Go to `/account-ims-sdk/src/test/resources/mock/Gactim8Test/test_gactim8Test_usecase_1.input.json` and replace it with the follwoing [get-account-input json](./assets/resources/test_gactim8Test_usecase_1.input.json). 
+  -  Go to `/account-ims-sdk/src/test/resources/mock/Gactim8Test/test_gactim8Test_usecase_1.output.json`  and replace it with the following [get-account-output json](./assets/resources/test_gactim8Test_usecase_1.output.json).  
   - Go to `/account-ims-sdk/src/test/java/tests/Gactim8Test.java`, comment the second test.
   - Right-click on the test → Run as JUnit test. 
 
 - **DACTIM8**
-   - Go to `/account-ims-sdk/src/test/resources/mock/Dactim8Test/test_dactim8Test_usecase_1.input.json` and replace it with the follwoing [get-account-input json](/assets/resources/test_dactim8Test_usecase_1.input.json). 
-  -  Go to `/account-ims-sdk/src/test/resources/mock/Dactim8Test/test_dactim8Test_usecase_1.output.json`  and replace it with the following [get-account-output json](/assets/resources/test_dactim8Test_usecase_1.output.json).  
+   - Go to `/account-ims-sdk/src/test/resources/mock/Dactim8Test/test_dactim8Test_usecase_1.input.json` and replace it with the follwoing [get-account-input json](./assets/resources/test_dactim8Test_usecase_1.input.json). 
+  -  Go to `/account-ims-sdk/src/test/resources/mock/Dactim8Test/test_dactim8Test_usecase_1.output.json`  and replace it with the following [get-account-output json](./assets/resources/test_dactim8Test_usecase_1.output.json).  
   - Go to `/account-ims-sdk/src/test/java/tests/Dactim8Test.java`, comment the second test.
   - Right-click on the test → Run as JUnit test. 
 
 
-![Create SDK](/assets/images/account-ims-junit.gif)
+![Create SDK](./assets/images/account-ims-junit.gif)
 
 
 ## Step 4 – Create APIs from SDK
@@ -161,7 +161,7 @@ In order to reuse the test you can add the following to the test.
 3. Click at the **Default Package** field, to automatically fill it up.
 4. Press Next and add the SDK project that was created in **Step 1**  as the reference project.
 
-![Create SDK](/assets/images/account-ims-api.gif)
+![Create SDK](./assets/images/account-ims-api.gif)
 
 5. Create services from the SDK's entities. 
 - **RACTIM8**
@@ -207,7 +207,7 @@ In order to reuse the test you can add the following to the test.
    - Click **OK**.
 
 
-![Create SDK](/assets/images/account-ims-service.gif)
+![Create SDK](./assets/images/account-ims-service.gif)
 
 ## Step 5 - Run and Test your API
 
@@ -218,7 +218,7 @@ In order to reuse the test you can add the following to the test.
    - **Client Secret:** `client_secret`
 4. Test the API
 - **Click** on the  `/api​/resetaccount` → Try it out ,  
- use the following JSON as input [reset-accounts-input json](/assets/resources/test_ractim8Test_usecase_1.input.json), and click **Execute**. 
+ use the following JSON as input [reset-accounts-input json](./assets/resources/test_ractim8Test_usecase_1.input.json), and click **Execute**. 
 
 - **Click** on the  `/api/getallaccounts` → Try it out ,  
  use the following JSON as input 
@@ -232,16 +232,16 @@ In order to reuse the test you can add the following to the test.
    , and click **Execute**. 
 
 - **Click** on the  `/api/openaccount` → Try it out ,  
- use the following JSON as input [open-account-input json](/assets/resources/test_oactim8Test_usecase_1.input.json), and click **Execute**.
+ use the following JSON as input [open-account-input json](./assets/resources/test_oactim8Test_usecase_1.input.json), and click **Execute**.
 
 - **Click** on the  `/api/updateaccount` → Try it out ,  
- use the following JSON as input [update-account-input json](/assets/resources/test_uactim8Test_usecase_1.input.json), and click **Execute**. 
+ use the following JSON as input [update-account-input json](./assets/resources/test_uactim8Test_usecase_1.input.json), and click **Execute**. 
 
 - **Click** on the  `/api/getaccount` → Try it out ,  
- use the following JSON as input [get-account-input json](/assets/resources/test_gactim8Test_usecase_1.input.json), and click **Execute**. 
+ use the following JSON as input [get-account-input json](./assets/resources/test_gactim8Test_usecase_1.input.json), and click **Execute**. 
 
 - **Click** on the  `/api/deleteaccount` → Try it out ,  
- use the following JSON as input [delete-account-input json](/assets/resources/test_dactim8Test_usecase_1.input.json), and click **Execute**. 
+ use the following JSON as input [delete-account-input json](./assets/resources/test_dactim8Test_usecase_1.input.json), and click **Execute**. 
 
 
 ![Create SDK](/assets/images/account-ims-run-api.gif)

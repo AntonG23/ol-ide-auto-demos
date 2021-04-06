@@ -11,8 +11,8 @@ This demo shows generation of Java models from a **copy book** using OpenLegacy 
 
 ## Demo Resources
 
-- [PhoneBookRecord.in.cpy](/automation-tests/resources/PhoneBookRecord.in.cpy)
-- [PhoneBookRecord.out.cpy](/automation-tests/resources/PhoneBookRecord.out.cpy)
+- [PhoneBookRecord.in.cpy](./automation-tests/resources/PhoneBookRecord.in.cpy)
+- [PhoneBookRecord.out.cpy](./automation-tests/resources/PhoneBookRecord.out.cpy)
   
 ## Demo Definition
 
@@ -42,7 +42,7 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
 7. Open application.yaml located at `src/main/resources`, in **group-name** property insert the value: `GROUP1`, add a property: `output-offset: 0` and save the file
 8. Change in design-time.properties file located at the root of `mainframe-ims-sdk` the **generateCopyAsEntity** value to `true` and save the file
     
-![Create SDK](/assets/images/createSDK.gif)
+![Create SDK](./assets/images/createSDK.gif)
 
 ## Step 2 – Generate Java Model (Entity) from copybook
 > Now, we will create Java models out of our copy book file we wish to expose.
@@ -54,7 +54,7 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
 3. Mark **Generate JUnit test**
 4. Press **Ok**.
 
-![Generate Entity](/assets/images/generateEntity.gif)
+![Generate Entity](./assets/images/generateEntity.gif)
 
 ## Step 3 – Create a JUnit Test
 
@@ -108,7 +108,7 @@ class implementation from `public class Phonebookrecord implements org.openlegac
 4. Go to `src/test/java/tests/PhonebookrecordTest.java` and comment out `phonebookrecordTestUseCaseTest_2`. 
 5. Run the JUnit by Right Clicking on `PhonebookrecordTest.java` → Run As → JUnit Tests (or press **F11**).
 
-![Create JUnit](/assets/images/createJUnit.gif)
+![Create JUnit](./assets/images/createJUnit.gif)
 
 ## Step 4 – Create APIs from SDK
 
@@ -124,7 +124,7 @@ class implementation from `public class Phonebookrecord implements org.openlegac
 9. Add **phonebookrecordOutput** to the **Output box**
 10. Click **Ok**
 
-![Create API](/assets/images/createAPI.gif)
+![Create API](./assets/images/createAPI.gif)
 
 ## Step 5 - Run and Test your API
 
@@ -156,7 +156,7 @@ class implementation from `public class Phonebookrecord implements org.openlegac
     }
    ```
 
-![Alt Text](/assets/images/swagger.gif)
+![Alt Text](./assets/images/swagger.gif)
 ## Summary
 
 In this demo we have presented an end to end integration with **Mainframe IMS** using OpenLegacy IDE within just a couple of minutes. Based on the copy book supllied we have automatically generated Java SDK that enables calling the mainframe IMS, later on we have presented the creation of a REST API utilizing the SDK.

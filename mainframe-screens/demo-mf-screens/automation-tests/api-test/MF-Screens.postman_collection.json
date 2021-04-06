@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "7327fda6-522c-4240-af9f-18b4a9309959",
+		"name": "MF-Screens",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Loan",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2dce9745-5471-4a60-bda2-42a382737b15",
+						"exec": [
+							"pm.test(\"Successful GET request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Assert by values\", function () {\r",
+							"    var jsonData = responseBody;\r",
+							"    var jsonOutput = pm.environment.get(\"jsonOutput\");\r",
+							"    pm.expect(jsonData).to.equal(jsonOutput);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"loanNumber\": \"1000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/api/loan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"loan"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

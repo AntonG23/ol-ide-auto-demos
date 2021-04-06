@@ -4,10 +4,6 @@
 
 This demo shows generation of Java models from **DB2 Z/OS Stored Procedure** using the OpenLegacy IDE's built in **DB2 (DB400) Procedure Fetcher**, and how to expose it as a **REST API**.
 
-## Architecture
-
-![DB2 Stored Procedure Architecture](/assets/images/db2-sp.png)
-
 ## Pre-Requirements
 
 - OpenLegacy IDE 4.6.12 (Full installation including JDK and all Maven dependencies)
@@ -37,7 +33,7 @@ This demo shows generation of Java models from **DB2 Z/OS Stored Procedure** usi
 8. Set the path to licence file.
 9. Restart the ide
 
-![How to create SDK Project](/assets/images/setDriver.gif)
+![How to create SDK Project](./assets/images/setDriver.gif)
 
 ## Step 1 – Create a New SDK Project
 
@@ -60,7 +56,7 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
    - **Database Password:** `LEGACY`
 7. Click **Finish**
 
-![How to create SDK Project](/assets/images/createSDK.gif)
+![How to create SDK Project](./assets/images/createSDK.gif)
 
 ## Step 2 – Generate Java Model (Entity) from Stored Procedure
 
@@ -122,7 +118,7 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
 5. Check **Generate JUnit Test checkbox**.
 6. Click **OK**.
 
-![How to fetch stored procedure](/assets/images/generateModel.gif)
+![How to fetch stored procedure](./assets/images/generateModel.gif)
 
 ## Step 3 – Create a JUnit Test
 
@@ -246,7 +242,7 @@ If you followed the steps above the test should pass successfully.
     - Leave the output empty
     - **Click OK**
 
-![Alt Text](/assets/images/generateAPI.gif)
+![Alt Text](./assets/images/generateAPI.gif)
 
 ## Step 5 - Run and Test your API
 
