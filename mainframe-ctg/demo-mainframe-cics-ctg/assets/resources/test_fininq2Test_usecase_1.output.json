@@ -1,0 +1,31 @@
+{
+  "dfhcommarea" : {
+    "custId" : "412-83254",
+    "creditCards" : [ {
+      "cardNumber" : "4580123412341234",
+      "cardType" : "GOLD",
+      "cardLimit" : 5000,
+      "cardUsage" : 1783
+    }, {
+      "cardNumber" : "4580002377826452",
+      "cardType" : "PLATINUM",
+      "cardLimit" : 10000,
+      "cardUsage" : 567
+    }, {
+      "cardNumber" : "4580887386255265",
+      "cardType" : "BUSINESS-G",
+      "cardLimit" : 7000,
+      "cardUsage" : 4873
+    }, {
+      "cardNumber" : "4580108372533424",
+      "cardType" : "BASIC",
+      "cardLimit" : 1000,
+      "cardUsage" : 0
+    }, {
+      "cardNumber" : "4580773685986244",
+      "cardType" : "FT-MEMBER",
+      "cardLimit" : 2000,
+      "cardUsage" : 600
+    } ]
+  }
+}

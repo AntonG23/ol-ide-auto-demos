@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "9e3a8ff9-61b3-4981-a0d3-0c40896f3a40",
+		"name": "Mainframe-CICS-TG-Create-Account",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createaccount",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4bd04c1e-6f05-4528-aec3-7429e842dde6",
+						"exec": [
+							"pm.test(\"Response 200 test\", function () {",
+							"  pm.expect(pm.response.code).to.be.oneOf([200]);",
+							"});",
+							"",
+							"pm.test(\"Compare response JSON with expected JSON\", function () {",
+							"  var jsonData = responseBody;",
+							"  var jsonOutput = pm.environment.get(\"jsonOutput\");",
+							"  compareJsonsWithExlude(jsonData,jsonOutput,['actoAccountId','actoIban','actoCrtDt','actoUpdtDt'])",
+							"});",
+							"",
+							"function compareJsonsWithExlude(json1, json2, exclude = []) {",
+							"    const reviverFilter = (k, v) => exclude.includes(k) ? undefined : v",
+							"    const json1Excluded = JSON.parse(json1, reviverFilter)",
+							"    const json2Excluded = JSON.parse(json2, reviverFilter)",
+							"    pm.expect(_.isEqual(JSON.stringify(json1Excluded), JSON.stringify(json2Excluded))).to.be.true",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dfhcommarea\" : {\r\n    \"crtAccountIn\" : {\r\n      \"actiCustomerId\" : \"204693875\",\r\n      \"actiCustomerName\" : \"Ori Shalom\",\r\n      \"actiTypcd\" : \"P\",\r\n      \"actiSubTypcd\" : \"BC\",\r\n      \"actiCntryCd\" : \"IL\",\r\n      \"actiBnkId\" : \"0012\",\r\n      \"actiBrnchId\" : 89,\r\n      \"actiInitialDeposit\" : \"9385828562.78\",\r\n      \"actiCurrency\" : \"USD\"\r\n    }\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/api/createaccount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"createaccount"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

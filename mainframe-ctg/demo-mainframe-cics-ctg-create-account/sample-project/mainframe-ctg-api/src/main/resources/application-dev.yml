@@ -1,0 +1,13 @@
+# Default configuration to work in development environment.
+# Disables oauth2 security.
+spring:
+  profiles:
+    active: dev
+  zipkin:
+    sender:
+      type: web
+
+ol:
+  security:
+    resourceserver:
+      ignored: /**

@@ -1,0 +1,31 @@
+{
+  "dfhcommarea" : {
+    "custId" : "412-83254",
+    "creditCards" : [ {
+      "cardNumber" : "",
+      "cardType" : "",
+      "cardLimit" : 0,
+      "cardUsage" : 0
+    }, {
+      "cardNumber" : "",
+      "cardType" : "",
+      "cardLimit" : 0,
+      "cardUsage" : 0
+    }, {
+      "cardNumber" : "",
+      "cardType" : "",
+      "cardLimit" : 0,
+      "cardUsage" : 0
+    }, {
+      "cardNumber" : "",
+      "cardType" : "",
+      "cardLimit" : 0,
+      "cardUsage" : 0
+    }, {
+      "cardNumber" : "",
+      "cardType" : "",
+      "cardLimit" : 0,
+      "cardUsage" : 0
+    } ]
+  }
+}

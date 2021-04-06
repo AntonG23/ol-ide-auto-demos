@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mainframe-CICS-TG" tests="1" time="2.140">
+  <testsuite name="cards" id="5f8f5ddf-b53d-4fa8-ac41-50decc749cf0" timestamp="2020-12-14T08:03:53.988Z" tests="2" failures="0" errors="0" time="1.070">
+    <testcase name="Successful POST request" time="1.070" classname="MainframeCicsTg"/>
+    <testcase name="Assert by values" time="1.070" classname="MainframeCicsTg"/>
+  </testsuite>
+</testsuites>
