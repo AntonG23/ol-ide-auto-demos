@@ -1,0 +1,19 @@
+{
+	"id": "31ad441a-c07e-443e-a152-e2662319869b",
+	"name": "soap-env",
+	"values": [
+		{
+			"key": "jsonOutput",
+			"value": "{\"outputParams\":{\"getCustomerResponse\":{\"customer\":{\"customerId\":99,\"name\":null,\"gender\":\"Male\",\"email\":\"tantonik2q@friendfeed.com\",\"phoneNumber\":\"706-231-4486\",\"address\":{\"country\":\"China\",\"city\":\"Jingtou\",\"streetName\":\"Graceland\",\"streetNumber\":\"329\"}}}}}",
+			"enabled": true
+		},
+		{
+			"key": "access_token",
+			"value": "{{access_token}}",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2020-11-16T15:53:34.142Z",
+	"_postman_exported_using": "Postman/7.34.0"
+}

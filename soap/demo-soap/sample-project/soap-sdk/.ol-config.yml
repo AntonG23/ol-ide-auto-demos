@@ -1,0 +1,38 @@
+---
+ol:
+  config:
+    apiSourceFolder: "src/main/java"
+    apiPackage: "com.soap_sdk.openlegacy"
+    webPackage: "com.soap_sdk.openlegacy.web"
+    generateTest: true
+    provider: "openlegacy-soap-rpc"
+    sourceFetcher: "sourceFetcher"
+    designtimeContext: "default"
+    backendSolution: "SOAP"
+    frontendSolution: "JAVA"
+    legacyFilename: "http://demo:1234@solutions.openlegacy.com:8085/services/customers.wsdl"
+    db2Type: "NONE"
+    rpc:
+      generateRpcPartAsExternalClass: true
+    additionalProperties: {}
+    designtime:
+      parser:
+        cobol:
+          addMissedDots: false
+          handleDuplicateNames: false
+        wsdl:
+          removeNamespaceTrailingSlash: false
+        pli:
+          getDirectionByFieldNamePattern: false
+          inputFieldPattern: ""
+          outputFieldPattern: ""
+        csv:
+          delimiter: ","
+      mapping:
+        converters: []
+      advancedParameters: []
+    swagger:
+      updateConfigInfoFromContractFile: true
+    file:
+      defaultStringLength: 255
+    modules: {}

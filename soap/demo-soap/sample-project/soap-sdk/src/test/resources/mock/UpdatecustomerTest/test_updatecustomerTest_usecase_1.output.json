@@ -1,0 +1,10 @@
+{
+  "outputParams" : {
+    "updatecustomerResponse" : {
+      "serviceStatus" : {
+        "statusCode" : "",
+        "message" : ""
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "outputParams" : {
+    "deletecustomerResponse" : {
+      "serviceStatus" : {
+        "statusCode" : "",
+        "message" : ""
+      }
+    }
+  }
+}

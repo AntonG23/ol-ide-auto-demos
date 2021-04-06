@@ -1,0 +1,19 @@
+{
+  "outputParams" : {
+    "getcustomerslistResponse" : {
+      "customers" : [ {
+        "customerId" : 0,
+        "name" : "",
+        "gender" : "",
+        "email" : "",
+        "phoneNumber" : "",
+        "address" : {
+          "country" : "",
+          "city" : "",
+          "streetName" : "",
+          "streetNumber" : ""
+        }
+      } ]
+    }
+  }
+}

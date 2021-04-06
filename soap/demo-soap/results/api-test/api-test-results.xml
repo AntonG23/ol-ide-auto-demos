@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="SOAP" tests="1" time="0.798">
+  <testsuite name="soap-customers" id="156dad1b-083a-40a4-adee-6f8201614240" timestamp="2021-02-21T15:05:22.644Z" tests="2" failures="0" errors="0" time="0.399">
+    <testcase name="Successful GET request" time="0.399" classname="Soap"/>
+    <testcase name="Assert by values" time="0.399" classname="Soap"/>
+  </testsuite>
+</testsuites>

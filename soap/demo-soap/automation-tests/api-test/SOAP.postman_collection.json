@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "ee67212f-7989-40b2-bc62-143b9a272649",
+		"name": "SOAP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "soap-customers",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7aed1365-a39f-4ec3-aaab-a3665d9fe426",
+						"exec": [
+							"pm.test(\"Successful GET request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);",
+							"});",
+							"",
+							"pm.test(\"Assert by values\", function () {",
+							"    var jsonData = responseBody;",
+							"    var jsonOutput = pm.environment.get(\"jsonOutput\");",
+							"  pm.expect(jsonData).to.equal(jsonOutput);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6WyJyZWFkIiwid3JpdGUiLCJ0cnVzdCIsIm9sX2FkbWluIl0sImV4cCI6MTYwNDg0MzE1MiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9DTElFTlQiXSwianRpIjoiMW5Rb1FyNmtQaEJUV3Q3dk13UElhd2ZyUkYwPSIsImNsaWVudF9pZCI6ImNsaWVudF9pZCJ9.2fqHWtSBoKp3d0ncDugC87iudHA3RhyYua1yp1KZ3O14w1PRYyKrbcysc6XJ3wH9F501wTQwEMaoVrYGePucc8fMWkW85WQGbMMvuOm9hDq2MI1NNhYDgXLamb4XenLvgg2ExkJ39LTFm5gWBKJUOqXBi4b5srshX7Yyw9edZRd3yz62bESG83M3YWsW315eAvO5WBB1381H_P3G4iZP7PsxqF_nn3tQ_NUaUemUsj69VqUNb0X1fil--wEKNf_SNiUsfThovlSt02Ave1Wu-TNYxdaNAdkuqAGDZj0Sour7IuEOA6wWtmPCKcTTa220o4ptzjIDepSRtRebepcDwA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerId\": 99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/api/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
