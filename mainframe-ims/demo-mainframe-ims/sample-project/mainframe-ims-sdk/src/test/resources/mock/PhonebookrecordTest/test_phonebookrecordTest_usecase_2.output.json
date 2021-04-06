@@ -1,0 +1,11 @@
+{
+  "phonebookrecordOutput" : {
+    "outMessage" : "",
+    "outCommand" : "",
+    "outLastName" : "",
+    "outFirstName" : "",
+    "outExtension" : "",
+    "outZipCode" : "",
+    "outSegno" : ""
+  }
+}

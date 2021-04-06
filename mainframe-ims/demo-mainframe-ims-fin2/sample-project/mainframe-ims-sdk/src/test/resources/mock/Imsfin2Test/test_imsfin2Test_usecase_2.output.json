@@ -1,0 +1,30 @@
+{
+  "imsfin2Output" : {
+    "creditCards" : [ {
+      "cardNumber" : "",
+      "cardType" : "",
+      "cardLimit" : 0,
+      "cardUsage" : 0
+    }, {
+      "cardNumber" : "",
+      "cardType" : "",
+      "cardLimit" : 0,
+      "cardUsage" : 0
+    }, {
+      "cardNumber" : "",
+      "cardType" : "",
+      "cardLimit" : 0,
+      "cardUsage" : 0
+    }, {
+      "cardNumber" : "",
+      "cardType" : "",
+      "cardLimit" : 0,
+      "cardUsage" : 0
+    }, {
+      "cardNumber" : "",
+      "cardType" : "",
+      "cardLimit" : 0,
+      "cardUsage" : 0
+    } ]
+  }
+}

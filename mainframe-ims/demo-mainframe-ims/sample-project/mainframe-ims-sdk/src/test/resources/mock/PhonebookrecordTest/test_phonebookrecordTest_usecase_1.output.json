@@ -1,0 +1,22 @@
+{
+  "errorCode" : null,
+  "errorMessage" : null,
+  "errorObject" : null,
+  "phonebookrecordInput" : {
+     "inFiller" : "",
+     "inCommand" : "DISPLAY",
+     "inLastName" : "SMITH",
+     "inFirstName" : "",
+     "inExtension" : "",
+     "inZipCode" : ""
+  },
+  "phonebookrecordOutput" : {
+     "outMessage" : "ENTRY WAS DISPLAYED",
+     "outCommand" : "DISPLAY",
+     "outLastName" : "SMITH",
+     "outFirstName" : "JOHN",
+     "outExtension" : "24680",
+     "outZipCode" : "10952",
+     "outSegno" : "0001"
+  }
+}

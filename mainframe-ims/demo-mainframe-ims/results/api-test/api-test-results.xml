@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mainframe-IMS" tests="1" time="1.152">
+  <testsuite name="mainframe-ims-customerdetails" id="7c171495-0a21-475e-9a58-9a9c5e746a1b" timestamp="2021-02-21T15:04:10.311Z" tests="2" failures="0" errors="0" time="0.576">
+    <testcase name="Successful GET request" time="0.576" classname="MainframeIms"/>
+    <testcase name="Assert by values" time="0.576" classname="MainframeIms"/>
+  </testsuite>
+</testsuites>

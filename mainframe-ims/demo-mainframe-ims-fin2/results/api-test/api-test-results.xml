@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mainframe-IMS-Fin2" tests="1" time="1.286">
+  <testsuite name="mainframe-ims-fin2-creditcard" id="1ed68c09-759f-4816-8f04-11b3cbacb931" timestamp="2020-11-26T09:09:27.447Z" tests="2" failures="0" errors="0" time="0.643">
+    <testcase name="Successful GET request" time="0.643" classname="MainframeImsFin2"/>
+    <testcase name="Assert by values" time="0.643" classname="MainframeImsFin2"/>
+  </testsuite>
+</testsuites>

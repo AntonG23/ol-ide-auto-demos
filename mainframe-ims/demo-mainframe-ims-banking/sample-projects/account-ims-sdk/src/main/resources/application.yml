@@ -1,0 +1,38 @@
+ol:
+  ims:
+    project:
+      accountImsSdk:
+        host: mainframe.openlegacy.com
+        port: 9999
+        username: DEMO001
+        password: Legacy
+        code-page: CP037
+        data-store-name: IVP1 
+        connection-timeout: 5000
+        group-name: GROUP1 
+        ssl-properties:
+          ssl-enabled: false
+        transaction-properties:
+          commit-mode: COMMIT_AND_SEND
+          user-message-exit-identifier: HWSSMPL1
+          transaction-timeout: 5000
+        connector-type: java
+        irm-header:
+          irmArch: IRM_ARCH0
+          irmArchitecture0:
+            irm-f0: irm-f0-default
+            irm-id: HWSSMPL1           # User Message Exit
+            irm-f5: "42"
+            irm-timer: "67"
+            irm-client-id: "16580844"
+            irm-f1: IRM_F1_NO_MFS
+            irm-f2: "COMMIT_THEN_SEND"                     # Commit mode
+            irm-f3: NONE
+            irm-f4: ACK
+            irm-imsdestid: IVP1                     # DataStore
+            irm-lterm: "ARIHTER"
+            irm-racf-userid: DEMO001                # RACF User
+            irm-racf-pw: LEGACY                  # RACF Password
+            irm-racf-grname: GROUP1               # RACF Group
+  license:
+    key: eyJhbGciOiJSUzI1NiJ9.eyJwcm9kdWN0Ijoib3BlbmxlZ2FjeS1jb3JlIiwic3ViIjoib2wiLCJpc3N1ZWRfYXQiOiIyMDIxLTAzLTMxVDExOjE1OjQ3LjQwOFoiLCJ2YWxpZF9mb3IiOjkwLCJjdXN0b21lcl9uYW1lIjoiLS1uYW1lIGRlbW9zIn0.CZILA_rxXSba8Yk__fW_GZf82tJ_6R-BAH8zDnxNBC8Ch2-i_UkvhHU762W1v12LJr_IXHiWtwH6fn9Cg4T9Ti5ztzN5wM6ANOsXM0L4Dz26_pgC6AQgi3bdVQUfJM8mDFquOkODEtPdtcTUC5FVx37T-z16AJjuYwiQ6ad9WxFA5kMUBUWytc_uIyPXdSq8OVS7R_le6LlOK-m4GI6MZEmSRL1h205wJW1H-4s61acl-T6FFu3QQPsuMPNZlZfxP1-yvyjFkyK7e2Yj2sftEFNuHgBa-xrPYVBXWtQ04EX3kb06OSf48tEsFi3xoJzPAUXoFNUkuqbulWSXB7qSGQ

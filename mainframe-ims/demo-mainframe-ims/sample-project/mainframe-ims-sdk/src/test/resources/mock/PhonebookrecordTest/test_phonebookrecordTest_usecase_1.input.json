@@ -1,0 +1,10 @@
+{
+  "phonebookrecordInput" : {
+    "inFiller" : "",
+    "inCommand" : "DISPLAY",
+    "inLastName" : "SMITH",
+    "inFirstName" : "",
+    "inExtension" : "",
+    "inZipCode" : ""
+  }
+}

@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "8c360af8-2a1c-44fd-bd88-261e42778470",
+		"name": "Mainframe-IMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "mainframe-ims-customerdetails",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b93763ba-bc8e-4ac6-b890-455ff733eacd",
+						"exec": [
+							"pm.test(\"Successful GET request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);",
+							"});",
+							"",
+							"pm.test(\"Assert by values\", function () {",
+							"    var jsonData = responseBody;",
+							"    var jsonOutput = pm.environment.get(\"jsonOutput\");",
+							"  pm.expect(jsonData).to.equal(jsonOutput);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "07dcbc87-cb21-4c4e-9da7-a87e5ba47d36",
+						"exec": [
+							"const tokenUrl = 'http://127.0.0.1:8080/oauth/token';\r",
+							"const clientId = 'client_id';\r",
+							"const clientSecret = 'client_secret';\r",
+							"const getTokenRequest = {\r",
+							"  method: 'POST',\r",
+							"  url: tokenUrl,\r",
+							"  header:{\r",
+							"    'content-type': 'application/x-www-form-urlencoded',\r",
+							"    'Authorization': 'Basic Y2xpZW50X2lkOmNsaWVudF9zZWNyZXQ='\r",
+							"  },\r",
+							"  body: {\r",
+							"      mode: 'formdata',\r",
+							"      formdata: [\r",
+							"          { key: 'grant_type', value: 'client_credentials' },\r",
+							"          { key: 'client_id', value: clientId },\r",
+							"          { key: 'client_secret', value: clientSecret }\r",
+							"      ]\r",
+							"  }\r",
+							"};\r",
+							" \r",
+							"pm.sendRequest(getTokenRequest, (err, response) => {\r",
+							"    if(err === null)\r",
+							"    {\r",
+							"  const jsonResponse = response.json();\r",
+							"  const newAccessToken = jsonResponse.access_token;\r",
+							"    \r",
+							"  pm.variables.set('access_token', newAccessToken);\r",
+							"    }\r",
+							"    else console.log(formdata);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "{{access_token}}",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"inCommand\": \"DISPLAY\",\n\t\"inLastName\": \"SMITH\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/customerdetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customerdetails"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
