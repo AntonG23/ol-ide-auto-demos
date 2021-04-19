@@ -128,27 +128,27 @@ We can extend this test suite with additional unit tests to validate our connect
 ### RACTSQL
 
 1. Go to `/src/test/resources/mock/RactsqlTest/test_ractsqlTest_usecase_1.input.json` and replace the JSON with:
-- [RACTSQL json Input](./assets/mock/Ractsql/test_ractsqlTest_usecase_1.input.json)
+- [RACTSQL json Input](./assets/mock/RactsqlTest/test_ractsqlTest_usecase_1.input.json)
 2. Go to `/src/test/resources/mock/RactsqlTest/test_ractsqlTest_usecase_1.output.json` and repace it with the expected output:
-- [RACTSQL json Output](./assets/mock/Ractsql/test_ractsqlTest_usecase_1.output.json)
+- [RACTSQL json Output](./assets/mock/RactsqlTest/test_ractsqlTest_usecase_1.output.json)
 3. Go to `src/test/java/tests/RactsqlTest.java` and comment the second test. 
 4. Right click on `RactsqlTest.java` -> run as JUnit test.   
 
 ### LACTSQL
 
 1. Go to `/src/test/resources/mock/LactsqlTest/test_lactsqlTest_usecase_1.input.json` and replace the JSON with:
-- [LACTSQL json Input](./assets/mock/Lactsql/test_lactsqlTest_usecase_1.input.json)
+- [LACTSQL json Input](./assets/mock/LactsqlTest/test_lactsqlTest_usecase_1.input.json)
 2. Go to `/src/test/resources/mock/LactsqlTest/test_lactsqlTest_usecase_1.output.json` and repace it with the expected output:
-- [LACTSQL json Output](./assets/mock/Lactsql/test_lactsqlTest_usecase_1.output.json)
+- [LACTSQL json Output](./assets/mock/LactsqlTest/test_lactsqlTest_usecase_1.output.json)
 3. Go to `src/test/java/tests/LactsqlTest.java` and comment the second test. 
 4. Right click on `LactsqlTest.java` -> run as JUnit test.   
 
 ### OACTSQL
 
 1. Go to `/src/test/resources/mock/OactsqlTest/test_oactsqlTest_usecase_1.input.json` and replace the JSON with:
-- [OACTSQL json Input](./assets/mock/Oactsql/test_oactsqlTest_usecase_1.input.json)
+- [OACTSQL json Input](./assets/mock/OactsqlTest/test_oactsqlTest_usecase_1.input.json)
 2. Go to `/src/test/resources/mock/OactsqlTest/test_oactsqlTest_usecase_1.output.json` and repace it with the expected output:
-- [OACTSQL json Output](./assets/mock/Oactsql/test_oactsqlTest_usecase_1.output.json)
+- [OACTSQL json Output](./assets/mock/OactsqlTest/test_oactsqlTest_usecase_1.output.json)
 3. Go to `src/test/java/tests/OactsqlTest.java` and comment the second test. 
 4. Right click on `OactsqlTest.java` -> run as JUnit test.   
 

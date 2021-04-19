@@ -33,7 +33,7 @@ This demo shows generation of Java models from **DB2 Z/OS Stored Procedure** usi
 8. Set the path to licence file.
 9. Restart the ide
 
-![How to create SDK Project](/assets/images/setDriver.gif)
+![How to create SDK Project](./assets/images/setDriver.gif)
 
 ## Step 1 – Create a New SDK Project
 
@@ -56,7 +56,7 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
    - **Database Password:** `LEGACY`
 7. Click **Finish**
 
-![How to create SDK Project](/assets/images/createSDK.gif)
+![How to create SDK Project](./assets/images/createSDK.gif)
 
 ## Step 2 – Generate Java Model (Entity) from Stored Procedure
 
@@ -118,7 +118,7 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
 5. Check **Generate JUnit Test checkbox**.
 6. Click **OK**.
 
-![How to fetch stored procedure](/assets/images/generateModel.gif)
+![How to fetch stored procedure](./assets/images/generateModel.gif)
 
 ## Step 3 – Create a JUnit Test
 
@@ -138,7 +138,7 @@ We can extend this test suite with additional unit tests to validate our connect
 
 1. Go to `/src/test/resources/mock/LpolsqlTest/test_lpolsqlTest_usecase_1.input.json` and replace the JSON with:
 - [LPOLSQL json Input](./assets/mock/Lpolsql/test_rpolsqlTest_usecase_1.input.json)
-2. Go to `/src/test/resources/mock/RpolsqlTest/test_rpolsqlTest_usecase_1.output.json` and repace it with the expected output:
+2. Go to `/src/test/resources/mock/LpolsqlTest/test_lpolsqlTest_usecase_1.output.json` and repace it with the expected output:
 - [LPOLSQL json Output](./assets/mock/Lpolsql/test_lpolsqlTest_usecase_1.output.json)
 3. Go to `src/test/java/tests/LpolsqlTest.java` and comment the second test. 
 4. Right click on `LpolsqlTest.java` -> run as JUnit test.  
@@ -242,7 +242,7 @@ If you followed the steps above the test should pass successfully.
     - Leave the output empty
     - **Click OK**
 
-![Alt Text](/assets/images/generateAPI.gif)
+![Alt Text](./assets/images/generateAPI.gif)
 
 ## Step 5 - Run and Test your API
 
@@ -254,26 +254,26 @@ If you followed the steps above the test should pass successfully.
 4.  **Click** on the API we've created → Try it out
 
     ### ResetPolicy
-    - Set data as input from - [Ractsql json Input](./assets/mock/RactsqlTest/test_ractsqlTest_usecase_1.input.json)
+    - Set data as input from - [Rpolsql json Input](./assets/mock/RpolsqlTest/test_rpolsqlTest_usecase_1.input.json)
     - You should see successful respond returned directly from DB2 program.
     ### ListPolicy
-    - Set data as input from - [Lactsql json Input](./assets/mock/LactsqlTest/test_lactsqlTest_usecase_1.input.json)
+    - Set data as input from - [Lpolsql json Input](./assets/mock/LpolsqlTest/test_lpolsqlTest_usecase_1.input.json)
     - You should see successful respond returned directly from DB2 program.
     
     ### OpenPolicy
-    - Set data as input from - [Oactsql json Input](./assets/mock/OactsqlTest/test_oactsqlTest_usecase_1.input.json)
+    - Set data as input from - [Opolsql json Input](./assets/mock/OpolsqlTest/test_opolsqlTest_usecase_1.input.json)
     - You should see successful respond returned directly from DB2 program.
     
     ### GetPolicy
-    - Set data as input from - [Gactsql json Input](./assets/mock/GactsqlTest/test_gactsqlTest_usecase_1.input.json)
+    - Set data as input from - [Gpolsql json Input](./assets/mock/GpolsqlTest/test_gpolsqlTest_usecase_1.input.json)
     - You should see successful respond returned directly from DB2 program.
     
     ### UpdatePolicy
-    - Set data as input from - [Uactsql json Input](./assets/mock/UactsqlTest/test_uactsqlTest_usecase_1.input.json)
+    - Set data as input from - [Upolsql json Input](./assets/mock/UpolsqlTest/test_upolsqlTest_usecase_1.input.json)
     - You should see successful respond returned directly from DB2 program.
     
     ### DeletePolicy
-    - Set data as input from - [Dactsql json Input](./assets/mock/DactsqlTest/test_dactsqlTest_usecase_1.input.json)
+    - Set data as input from - [Dpolsql json Input](./assets/mock/DpolsqlTest/test_dpolsqlTest_usecase_1.input.json)
     - You should see successful respond returned directly from DB2 program.
 
 ![RUN API](./assets/images/runAPI.gif)    
