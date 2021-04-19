@@ -8,6 +8,8 @@ This demo shows generation of Java models from **DB2 Z/OS Stored Procedure** usi
 
 - OpenLegacy IDE 4.6.12 (Full installation including JDK and all Maven dependencies)
 - Internet Connection
+- DB2 driver.
+- Db2 licence file.
 > **_NOTE:_**  When preparing for a DB2 project, Db2 driver and license should be provided by the client.
 
 ## Demo Definition
@@ -45,16 +47,12 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
 2. Define the **Project Name** as `policy-db2-sdk`.
 3. Click at the **Default Package** field, to automatically fill it up.
 4. Select **Stored Procedures** as the backend and click **Next**.
-5. From the **drop-down menu** , choose **DB2**.
-6. Drop down with pop with setup missed driver clathpath and click **Yes**
-7. set the path to driver
-8. set the path to licence
-9. repeat step 1 to 6 
+5. From the **Database Type** drop-down menu, choose **DB2 Z/OS**.
 6. Enter the following database credentials:
    - **Database URL:** `jdbc:db2://mainframe.openlegacy.com:5035/DALLASB`
    - **Database Username:** `DEMO001`
    - **Database Password:** `LEGACY`
-7. Click **Finish**
+7. Click **Finish**.
 
 ![How to create SDK Project](./assets/images/createSDK.gif)
 
