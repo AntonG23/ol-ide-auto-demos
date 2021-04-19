@@ -155,27 +155,27 @@ We can extend this test suite with additional unit tests to validate our connect
 ### GACTSQL
 
 1. Go to `/src/test/resources/mock/GactsqlTest/test_gactsqlTest_usecase_1.input.json` and replace the JSON with:
-- [GACTSQL json Input](./assets/mock/Gactsql/test_gactsqlTest_usecase_1.input.json)
+- [GACTSQL json Input](./assets/mock/GactsqlTest/test_gactsqlTest_usecase_1.input.json)
 2. Go to `/src/test/resources/mock/GactsqlTest/test_gactsqlTest_usecase_1.output.json` and repace it with the expected output:
-- [GACTSQL json Output](./assets/mock/Gactsql/test_gactsqlTest_usecase_1.output.json)
+- [GACTSQL json Output](./assets/mock/GactsqlTest/test_gactsqlTest_usecase_1.output.json)
 3. Go to `src/test/java/tests/GactsqlTest.java` and comment the second test. 
 4. Right click on `GactsqlTest.java` -> run as JUnit test.   
 
 ### UACTSQL
 
 1. Go to `/src/test/resources/mock/UactsqlTest/test_uactsqlTest_usecase_1.input.json` and replace the JSON with:
-- [UACTSQL json Input](./assets/mock/Uactsql/test_uactsqlTest_usecase_1.input.json)
+- [UACTSQL json Input](./assets/mock/UactsqlTest/test_uactsqlTest_usecase_1.input.json)
 2. Go to `/src/test/resources/mock/UactsqlTest/test_uactsqlTest_usecase_1.output.json` and repace it with the expected output:
-- [UACTSQL json Output](./assets/mock/Uactsql/test_uactsqlTest_usecase_1.output.json)
+- [UACTSQL json Output](./assets/mock/UactsqlTest/test_uactsqlTest_usecase_1.output.json)
 3. Go to `src/test/java/tests/UactsqlTest.java` and comment the second test. 
 4. Right click on `UactsqlTest.java` -> run as JUnit test.   
 
 ### DACTSQL
 
 1. Go to `/src/test/resources/mock/DactsqlTest/test_dactsqlTest_usecase_1.input.json` and replace the JSON with:
-- [DACTSQL json Input](./assets/mock/Dactsql/test_dactsqlTest_usecase_1.input.json)
+- [DACTSQL json Input](./assets/mock/DactsqlTest/test_dactsqlTest_usecase_1.input.json)
 2. Go to `/src/test/resources/mock/DactsqlTest/test_dactsqlTest_usecase_1.output.json` and repace it with the expected output:
-- [DACTSQL json Output](./assets/mock/Dactsql/test_dactsqlTest_usecase_1.output.json)
+- [DACTSQL json Output](./assets/mock/DactsqlTest/test_dactsqlTest_usecase_1.output.jso)
 3. Go to `src/test/java/tests/DactsqlTest.java` and comment the second test. 
 4. Right click on `DactsqlTest.java` -> run as JUnit test.   
 

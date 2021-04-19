@@ -128,54 +128,54 @@ We can extend this test suite with additional unit tests to validate our connect
 ### RPOLSQL
 
 1. Go to `/src/test/resources/mock/RpolsqlTest/test_rpolsqlTest_usecase_1.input.json` and replace the JSON with:
-- [RPOLSQL json Input](./assets/mock/Rpolsql/test_rpolsqlTest_usecase_1.input.json)
+- [RPOLSQL json Input](./assets/mock/RpolsqlTest/test_rpolsqlTest_usecase_1.input.json)
 2. Go to `/src/test/resources/mock/RpolsqlTest/test_rpolsqlTest_usecase_1.output.json` and repace it with the expected output:
-- [RPOLSQL json Output](./assets/mock/Rpolsql/test_rpolsqlTest_usecase_1.output.json)
+- [RPOLSQL json Output](./assets/mock/RpolsqlTest/test_rpolsqlTest_usecase_1.output.json)
 3. Go to `src/test/java/tests/RpolsqlTest.java` and comment the second test. 
 4. Right click on `RpolsqlTest.java` -> run as JUnit test.   
 
 ### LPOLSQL
 
 1. Go to `/src/test/resources/mock/LpolsqlTest/test_lpolsqlTest_usecase_1.input.json` and replace the JSON with:
-- [LPOLSQL json Input](./assets/mock/Lpolsql/test_rpolsqlTest_usecase_1.input.json)
+- [LPOLSQL json Input](./assets/mock/LpolsqlTest/test_lpolsqlTest_usecase_1.input.json)
 2. Go to `/src/test/resources/mock/LpolsqlTest/test_lpolsqlTest_usecase_1.output.json` and repace it with the expected output:
-- [LPOLSQL json Output](./assets/mock/Lpolsql/test_lpolsqlTest_usecase_1.output.json)
+- [LPOLSQL json Output](./assets/mock/LpolsqlTest/test_lpolsqlTest_usecase_1.output.json)
 3. Go to `src/test/java/tests/LpolsqlTest.java` and comment the second test. 
 4. Right click on `LpolsqlTest.java` -> run as JUnit test.  
 
 ### OPOLSQL
 
 1. Go to `/src/test/resources/mock/OpolsqlTest/test_opolsqlTest_usecase_1.input.json` and replace the JSON with:
-- [OPOLSQL json Input](./assets/mock/Opolsql/test_opolsqlTest_usecase_1.input.json)
+- [OPOLSQL json Input](./assets/mock/OpolsqlTest/test_opolsqlTest_usecase_1.input.json)
 2. Go to `/src/test/resources/mock/OpolsqlTest/test_opolsqlTest_usecase_1.output.json` and repace it with the expected output:
-- [OPOLSQL json Output](./assets/mock/Opolsql/test_opolsqlTest_usecase_1.output.json)
+- [OPOLSQL json Output](./assets/mock/OpolsqlTest/test_opolsqlTest_usecase_1.output.json)
 3. Go to `src/test/java/tests/OpolsqlTest.java` and comment the second test. 
 4. Right click on `OpolsqlTest.java` -> run as JUnit test.  
 
 ### GPOLSQL
 
 1. Go to `/src/test/resources/mock/GpolsqlTest/test_gpolsqlTest_usecase_1.input.json` and replace the JSON with:
-- [GPOLSQL json Input](./assets/mock/Gpolsql/test_gpolsqlTest_usecase_1.input.json)
+- [GPOLSQL json Input](./assets/mock/GpolsqlTest/test_gpolsqlTest_usecase_1.output.json)
 2. Go to `/src/test/resources/mock/GpolsqlTest/test_gpolsqlTest_usecase_1.output.json` and repace it with the expected output:
-- [GPOLSQL json Output](./assets/mock/Gpolsql/test_gpolsqlTest_usecase_1.output.json)
+- [GPOLSQL json Output](./assets/mock/GpolsqlTest/test_gpolsqlTest_usecase_1.output.json)
 3. Go to `src/test/java/tests/GpolsqlTest.java` and comment the second test. 
 4. Right click on `GpolsqlTest.java` -> run as JUnit test.  
 
 ### UPOLSQL
 
 1. Go to `/src/test/resources/mock/UpolsqlTest/test_upolsqlTest_usecase_1.input.json` and replace the JSON with:
-- [UPOLSQL json Input](./assets/mock/Upolsql/test_upolsqlTest_usecase_1.input.json)
+- [UPOLSQL json Input](./assets/mock/UpolsqlTest/test_upolsqlTest_usecase_1.input.json)
 2. Go to `/src/test/resources/mock/UpolsqlTest/test_upolsqlTest_usecase_1.output.json` and repace it with the expected output:
-- [UPOLSQL json Output](./assets/mock/Upolsql/test_upolsqlTest_usecase_1.output.json)
+- [UPOLSQL json Output](./assets/mock/UpolsqlTest/test_upolsqlTest_usecase_1.output.json)
 3. Go to `src/test/java/tests/UpolsqlTest.java` and comment the second test. 
 4. Right click on `UpolsqlTest.java` -> run as JUnit test.  
 
 ### DPOLSQL
 
 1. Go to `/src/test/resources/mock/DpolsqlTest/test_dpolsqlTest_usecase_1.input.json` and replace the JSON with:
-- [DPOLSQL json Input](./assets/mock/Dpolsql/test_dpolsqlTest_usecase_1.input.json)
+- [DPOLSQL json Input](./assets/mock/DpolsqlTest/test_dpolsqlTest_usecase_1.input.json)
 2. Go to `/src/test/resources/mock/DpolsqlTest/test_dpolsqlTest_usecase_1.output.json` and repace it with the expected output:
-- [RPOLSQL json Output](./assets/mock/Dpolsql/test_dpolsqlTest_usecase_1.output.json)
+- [RPOLSQL json Output](./assets/mock/DpolsqlTest/test_dpolsqlTest_usecase_1.output.json)
 3. Go to `src/test/java/tests/DpolsqlTest.java` and comment the second test. 
 4. Right click on `DpolsqlTest.java` -> run as JUnit test.  
 
