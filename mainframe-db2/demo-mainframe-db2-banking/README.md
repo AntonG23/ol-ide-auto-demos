@@ -2,14 +2,14 @@
 
 ## Introduction
 
-This demo shows generation of Java models from **DB2 Z/OS Stored Procedure** using the OpenLegacy IDE's built in **DB2 (DB400) Procedure Fetcher**, and how to expose it as a **REST API**.
+This demo shows generation of Java models from **DB2 Z/OS Stored Procedure** using the OpenLegacy IDE's built in **DB2 Z/OS Procedure Fetcher**, and how to expose it as a **REST API**.
 
 ## Pre-Requirements
 
 - OpenLegacy IDE 4.6.12 (Full installation including JDK and all Maven dependencies)
 - Internet Connection
 - DB2 driver.
-- Db2 licence file.
+- DB2 licence file.
 
 > **_NOTE:_**  When preparing for a DB2 project, Db2 driver and license should be provided by the client.
 
@@ -174,7 +174,7 @@ We can extend this test suite with additional unit tests to validate our connect
 1. Go to `/src/test/resources/mock/DactsqlTest/test_dactsqlTest_usecase_1.input.json` and replace the JSON with:
 - [DACTSQL json Input](./assets/mock/DactsqlTest/test_dactsqlTest_usecase_1.input.json)
 2. Go to `/src/test/resources/mock/DactsqlTest/test_dactsqlTest_usecase_1.output.json` and repace it with the expected output:
-- [DACTSQL json Output](./assets/mock/DactsqlTest/test_dactsqlTest_usecase_1.output.jso)
+- [DACTSQL json Output](./assets/mock/DactsqlTest/test_dactsqlTest_usecase_1.output.json)
 3. Go to `src/test/java/tests/DactsqlTest.java` and comment the second test. 
 4. Right click on `DactsqlTest.java` -> run as JUnit test.   
 

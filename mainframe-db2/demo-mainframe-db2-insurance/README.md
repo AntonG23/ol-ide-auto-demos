@@ -228,15 +228,15 @@ If you followed the steps above the test should pass successfully.
 
     **Right-Click** on the **policy-db2-api** project → OpenLegacy → Generate API from SDK
     - Name the service `UpdatePolicy`
-    - Select from the `Uactsql` model and select all the fields as input
-    - Select from the `Uactsql` model and select all the fields as output
+    - Select from the `Upolsql` model and select all the fields as input
+    - Select from the `Upolsql` model and select all the fields as output
     - **Click OK**
 
     ### Delete policy Service
 
     **Right-Click** on the **policy-db2-api** project → OpenLegacy → Generate API from SDK
     - Name the service `DeletePolicy`
-    - Select from the `Uactsql` model the `accountId` as input
+    - Select from the `Dpolsql` model the `accountId` as input
     - Leave the output empty
     - **Click OK**
 
