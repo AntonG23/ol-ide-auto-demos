@@ -1,0 +1,11 @@
+# Default bootstrap configuration
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+      retry:
+        max-attempts: 100
+        max-interval: 30000
+      fail-fast: true

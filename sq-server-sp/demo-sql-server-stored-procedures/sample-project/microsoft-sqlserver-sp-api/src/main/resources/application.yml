@@ -1,0 +1,67 @@
+# Logging #
+#logging:
+#  level:
+#    org:
+#      openlegacy: debug
+
+
+management:
+  health:
+    defaults:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - olprojectinfo
+          - metrics
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8080/.well-known/jwks.json
+
+# Springdoc #
+springdoc:
+  pathsToMatch: /api/**
+  swagger-ui:
+    path: /swagger
+  api-docs:
+    path: /swagger/swagger.json
+# OpenLegacy #
+ol:
+  # OpenLegacy Common Properties (OLCommonProperties) #
+  common:
+    cache:
+      enabled: false
+  license:
+    key: eyJhbGciOiJSUzI1NiJ9.eyJwcm9kdWN0Ijoib3BlbmxlZ2FjeS1jb3JlIiwic3ViIjoib2wiLCJpc3N1ZWRfYXQiOiIyMDIwLTA5LTA5VDExOjAzOjEwLjMzNVoiLCJ2YWxpZF9mb3IiOi0xfQ.pLPwaVG73DCY1TSOrrvGo_dRIfz2TLXfrbb5qUO-jM1ndchxE1hvwNbNXh1ZZc415OjGAJ1w-QIT9NlXCqTJhnm6eFmnzGYdXbMDGkzW1b6pKQXz_P5pJmw1ZV5TCw-KziYO1Jl9JEGfkK22ITq1Y7Nou5uIdminO1-jAgPMq8V1wToo3MMMPXaN9NmMqQF0y7f9Roc2YJy3jYvy89al3G2VIJAhAOiUPIw0kYoKYK_E31L8GRzqOS85ZJtD12W5qQwmRZxVtlMFDasF7b7GeynljpwlR7xJsxWH8nIClAQFKoZZ9Y9-ZgVZRythQmX3NzN-wbindm47utTRwtGovA
+  security:
+    db:
+      init-schema: true
+      clients:
+        - client-id: client_id
+          client-secret: '{noop}client_secret'
+          scope: read,write,trust,ol_admin
+          authorized-grant-types: client_credentials
+
+---
+
+# microsoftSqlserverSpSdk
+ol:
+  storedproc:
+    project:
+      microsoftSqlserverSpSdk:
+        url: jdbc:sqlserver://solutions.openlegacy.com:1433
+        driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+        username: sa
+        password: '{cipher}84ce77521448c82a4998af76909495a8793af4cda85df041f0e04678ac35b68d'
+  license:
+    key: eyJhbGciOiJSUzI1NiJ9.eyJwcm9kdWN0Ijoib3BlbmxlZ2FjeS1jb3JlIiwic3ViIjoib2wiLCJpc3N1ZWRfYXQiOiIyMDIwLTA5LTA5VDExOjAzOjEwLjMzNVoiLCJ2YWxpZF9mb3IiOi0xfQ.pLPwaVG73DCY1TSOrrvGo_dRIfz2TLXfrbb5qUO-jM1ndchxE1hvwNbNXh1ZZc415OjGAJ1w-QIT9NlXCqTJhnm6eFmnzGYdXbMDGkzW1b6pKQXz_P5pJmw1ZV5TCw-KziYO1Jl9JEGfkK22ITq1Y7Nou5uIdminO1-jAgPMq8V1wToo3MMMPXaN9NmMqQF0y7f9Roc2YJy3jYvy89al3G2VIJAhAOiUPIw0kYoKYK_E31L8GRzqOS85ZJtD12W5qQwmRZxVtlMFDasF7b7GeynljpwlR7xJsxWH8nIClAQFKoZZ9Y9-ZgVZRythQmX3NzN-wbindm47utTRwtGovA
+
+
+
+

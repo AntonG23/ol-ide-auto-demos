@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "4039c90b-607c-40b0-81c0-34d91722a2c5",
+		"name": "SQL-Server-Stored-Procedures",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "sql-server-sp-expiredcards",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8de1e669-9f91-4da0-9c4d-651289813de3",
+						"exec": [
+							"pm.test(\"Successful GET request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);",
+							"});",
+							"",
+							"pm.test(\"Assert by values\", function () {",
+							"    var jsonData = responseBody;",
+							"    var jsonOutput = pm.environment.get(\"jsonOutput\");",
+							"  pm.expect(jsonData).to.equal(jsonOutput);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/expiredcards",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"expiredcards"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
