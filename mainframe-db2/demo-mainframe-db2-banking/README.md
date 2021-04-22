@@ -11,7 +11,7 @@ This demo shows generation of Java models from **DB2 Z/OS Stored Procedure** usi
 - DB2 driver.
 - DB2 licence file.
 
-> **_NOTE:_**  When preparing for a DB2 project, DB2 driver and license should be provided by the client. For this demo
+> **_NOTE:_**  When preparing for a DB2 project, DB2 driver and license should be provided by the client. For this demo, please contact support@openlegacy.com to get the files.
 
 ## Demo Definition
 
