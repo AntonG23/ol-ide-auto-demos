@@ -11,7 +11,7 @@ This demo shows generation of Java models from **DB2 Z/OS Stored Procedure** usi
 - DB2 driver.
 - DB2 licence file.
 
-> **_NOTE:_**  When preparing for a DB2 project, Db2 driver and license should be provided by the client.
+> **_NOTE:_**  When preparing for a DB2 project, DB2 driver and license should be provided by the client. For this demo
 
 ## Demo Definition
 
@@ -23,7 +23,7 @@ This demo shows generation of Java models from **DB2 Z/OS Stored Procedure** usi
 
 ## Step 0 - Set Driver Classpath
 
-- Only if this your first time creating an DB2 SDK project you have to set the driver and licence and follow this step.
+- Follow these steps to set the driver and license only if this your first time creating an DB2 SDK project.
 
 1. Open the New Project Wizard:
    - File → New → OpenLegacy SDK Project
@@ -31,9 +31,9 @@ This demo shows generation of Java models from **DB2 Z/OS Stored Procedure** usi
 3. Click at the **Default Package** field, to automatically fill it up.
 4. Select **Stored Procedures** as the backend and click **Next**.
 5. From the **drop-down menu** , choose **DB2/ZOS**.
-6. Drop down with pop will appear in order to set driver clathpath and license, click **Yes**
+6. Drop down with pop will appear in order to set driver classpath and license, click **Yes**
 7. Set the path to driver jar.
-8. Set the path to licence file.
+8. Set the path to license file.
 9. Restart the IDE.
 
 ![How to create SDK Project](./assets/images/setDriver.gif)
@@ -46,7 +46,7 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
 1. Open the New Project Wizard:
    - File → New → OpenLegacy SDK Project
 2. Define the **Project Name** as `account-db2-sdk`.
-3. Click at the **Default Package** field, to automatically fill it up.
+3. Click at the **Default Package** field, to automatically populate it.
 4. Select **Stored Procedures** as the backend and click **Next**.
 5. From the **Database Type** drop-down menu, choose **DB2 Z/OS**.
 6. Enter the following database credentials:
@@ -59,12 +59,12 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
 
 ## Step 2 – Generate Java Model (Entity) from Stored Procedure
 
-> Now, we will create Java models out of our Stored Procedure we wish to expose.
+> Now, we will create Java models out of the Stored Procedure we wish to expose.
 
 ### Reset Account
 
 1. Right click on the project → OpenLegacy → Import DB2 Stored Procedure
-2. Click on **Fetch metadata** and wait until our fetcher returns the list of stored procedures that exist and viewable for the user in the DB2 Server.
+2. Click on **Fetch metadata** and wait until our fetcher returns the list of stored procedures that exist and are viewable for the user in the DB2 Server.
 3. From the drop-down of **Database schema** choose **DEMO001**
 4. From the drop-down of **Stored procedure** choose **RACTSQL**
 5. Check **Generate JUnit Test checkbox**.
@@ -73,17 +73,17 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
 ### List Account
 
 1. Right click on the project → OpenLegacy → Import DB2 Stored Procedure
-2. Click on **Fetch metadata** and wait until our fetcher returns the list of stored procedures that exist and viewable for the user in the DB2 Server.
+2. Click on **Fetch metadata** and wait until our fetcher returns the list of stored procedures that exist and are viewable for the user in the DB2 Server.
 3. From the drop-down of **Database schema** choose **DEMO001**
 4. From the drop-down of **Stored procedure** choose **LACTSQL**
-5. In the **Result set fetch mode** select **Advnced** and type **CALL DEMO001.LACTSQL**
+5. In the **Result set fetch mode** select **Advanced** and type **CALL DEMO001.LACTSQL**
 6. Check **Generate JUnit Test checkbox**.
 7. Click **OK**.
 
 ### Open Account
 
 1. Right click on the project → OpenLegacy → Import DB2 Stored Procedure
-2. Click on **Fetch metadata** and wait until our fetcher returns the list of stored procedures that exist and viewable for the user in the DB2 Server.
+2. Click on **Fetch metadata** and wait until our fetcher returns the list of stored procedures that exist and are viewable for the user in the DB2 Server.
 3. From the drop-down of **Database schema** choose **DEMO001**
 4. From the drop-down of **Stored procedure** choose **OACTSQL**
 5. Check **Generate JUnit Test checkbox**.
@@ -92,17 +92,17 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
 ### Get Account
 
 1. Right click on the project → OpenLegacy → Import DB2 Stored Procedure
-2. Click on **Fetch metadata** and wait until our fetcher returns the list of stored procedures that exist and viewable for the user in the DB2 Server.
+2. Click on **Fetch metadata** and wait until our fetcher returns the list of stored procedures that exist and are viewable for the user in the DB2 Server.
 3. From the drop-down of **Database schema** choose **DEMO001**
 4. From the drop-down of **Stored procedure** choose **GACTSQL**
-5. In the **Result set fetch mode** select **Advnced** and type **CALL DEMO001.GACTSQL('68841327752')**
+5. In the **Result set fetch mode** select **Advanced** and type **CALL DEMO001.GACTSQL('68841327752')**
 5. Check **Generate JUnit Test checkbox**.
 6. Click **OK**.
 
 ### Update Account
 
 1. Right click on the project → OpenLegacy → Import DB2 Stored Procedure
-2. Click on **Fetch metadata** and wait until our fetcher returns the list of stored procedures that exist and viewable for the user in the DB2 Server.
+2. Click on **Fetch metadata** and wait until our fetcher returns the list of stored procedures that exist and are viewable for the user in the DB2 Server.
 3. From the drop-down of **Database schema** choose **DEMO001**
 4. From the drop-down of **Stored procedure** choose **UACTSQL**
 5. Check **Generate JUnit Test checkbox**.
@@ -111,7 +111,7 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
 ### Delete Account
 
 1. Right click on the project → OpenLegacy → Import DB2 Stored Procedure
-2. Click on **Fetch metadata** and wait until our fetcher returns the list of stored procedures that exist and viewable for the user in the DB2 Server.
+2. Click on **Fetch metadata** and wait until our fetcher returns the list of stored procedures that exist and are viewable for the user in the DB2 Server.
 3. From the drop-down of **Database schema** choose **DEMO001**
 4. From the drop-down of **Stored procedure** choose **DACTSQL**
 5. Check **Generate JUnit Test checkbox**.
@@ -179,7 +179,7 @@ We can extend this test suite with additional unit tests to validate our connect
 4. Right click on `DactsqlTest.java` -> run as JUnit test.   
 
 
-If you followed the steps above the test should pass successfully. 
+If you followed these steps, the test should pass successfully. 
 
 ![Create JUnit Tests](./assets/images/createJunit.gif)
 
@@ -189,7 +189,7 @@ If you followed the steps above the test should pass successfully.
 1. Open the New Project Wizard:
    - File → New → OpenLegacy API Project
 2. Define the **Project name** as `account-db2-api`.
-3. Click at the **Default Package** field, to automatically fill it up.
+3. Click at the **Default Package** field, to automatically populate it.
 4. Press Next and add the SDK project that was created in **Step 1**  as the reference project.
 5. Create services from the SDK's entities.
 
@@ -248,9 +248,9 @@ If you followed the steps above the test should pass successfully.
 1. **Right-Click** on the **account API** project → OpenLegacy → Run Application
 2. Open the browser on http://localhost:8080/swagger
 3. Authorize through **Oauth2**
-   - **Client Id:** `client_id`
+   - **Client ID:** `client_id`
    - **Client Secret:** `client_secret`
-4.  **Click** on the API we've created → Try it out
+4.  **Click** on the API we created → Try it out
 
     ### ResetAccount
     - Set data as input from - [Ractsql json Input](./assets/mock/RactsqlTest/test_ractsqlTest_usecase_1.input.json)
@@ -279,5 +279,5 @@ If you followed the steps above the test should pass successfully.
 
 ## Summary
 
-In this demo we have presented an end to end integration with the **DB2 Z/OS** using the OpenLegacy IDE within just a couple of minutes. We have started with fetching procedure metadata from a DB2 Server, based on the metadata we automatically generated the Java SDK that enables calling the Stored Procedure, later on we have presented the creation of a REST API utilizing the DB2 Stored Procedure SDK.
+In this demo we have presented an end to end integration with  **DB2 Z/OS** using the OpenLegacy IDE within just a few minutes. We began by fetching procedure metadata from a DB2 Server, then, based on the metadata, we automatically generated the Java SDK that enables calling the Stored Procedure. We then demonstrated the creation of a REST API utilizing the DB2 Stored Procedure SDK.
 We used the IDE to better model and design the API and showed how it works with a standard Swagger page.
