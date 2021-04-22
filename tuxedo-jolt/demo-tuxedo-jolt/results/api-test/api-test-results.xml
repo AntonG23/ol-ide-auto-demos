@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Tuxedo-Jolt" tests="1" time="1.271">
+  <testsuite name="UserDetails" id="62afdba3-ac4d-47c1-b3b3-68ec1ace9657" timestamp="2020-07-16T10:43:02.938Z" tests="2" failures="0" errors="0" time="1.271">
+    <testcase name="Successful GET request" time="1.271" classname="TuxedoJolt"/>
+    <testcase name="Assert by values" time="1.271" classname="TuxedoJolt"/>
+  </testsuite>
+</testsuites>

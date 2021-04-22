@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "e2402690-2d7b-4beb-b77d-3629857e1e9c",
+		"name": "Tuxedo-Jca",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ViewEntity",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e7ba0a56-d7b8-410b-bf00-0dc8400e0dfe",
+						"exec": [
+							"pm.test(\"Successful GET request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);",
+							"});",
+							"",
+							"pm.test(\"Assert by values\", function () {",
+							"    var jsonData = responseBody;",
+							"    var jsonOutput = pm.environment.get(\"jsonOutput\");",
+							"  pm.expect(jsonData).to.equal(jsonOutput);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "5c4f7e0a-3f5d-43dc-8ac7-c41e67a4d008",
+						"exec": [
+							"\r",
+							"const tokenUrl = 'http://127.0.0.1:8080/oauth/token';\r",
+							"const clientId = 'client_id';\r",
+							"const clientSecret = 'client_secret';\r",
+							"\r",
+							"const getTokenRequest = {\r",
+							"  method: 'POST',\r",
+							"  url: tokenUrl,\r",
+							"  header:{\r",
+							"    'content-type': 'application/x-www-form-urlencoded',\r",
+							"    'Authorization': 'Basic Y2xpZW50X2lkOmNsaWVudF9zZWNyZXQ='\r",
+							"  },\r",
+							"  body: {\r",
+							"      mode: 'formdata',\r",
+							"      formdata: [\r",
+							"          { key: 'grant_type', value: 'client_credentials' },\r",
+							"          { key: 'client_id', value: 'client_id' },\r",
+							"          { key: 'client_secret', value: 'client_secret' }\r",
+							"        //   { key: 'scope', value: 'read write trust ol_admin'}\r",
+							"\r",
+							"      ]\r",
+							"  }\r",
+							"};\r",
+							" \r",
+							"\r",
+							"pm.sendRequest(getTokenRequest, (err, response) => {\r",
+							"    if(err === null)\r",
+							"    {\r",
+							"  const jsonResponse = response.json();\r",
+							"  const newAccessToken = jsonResponse.access_token;\r",
+							"    \r",
+							"  pm.variables.set('access_token', newAccessToken);\r",
+							"    }\r",
+							"    else console.log(formdata);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"followAuthorizationHeader": false
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "{{access_token}}",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sval\" : 22,\r\n    \"lval\" : 11,\r\n    \"szStr1\" : \"test\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/viewentity",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"viewentity"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

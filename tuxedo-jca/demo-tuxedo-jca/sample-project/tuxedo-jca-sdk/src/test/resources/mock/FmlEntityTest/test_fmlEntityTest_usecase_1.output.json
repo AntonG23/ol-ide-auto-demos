@@ -1,0 +1,23 @@
+{
+    "sval1" : null,
+    "sval2" : null,
+    "lval1" : null,
+    "lval2" : [ ],
+    "lval3" : null,
+    "mystr1" : null,
+    "mystr2" : null,
+    "osval1" : null,
+    "osval2" : null,
+    "olval1" : null,
+    "olval2" : [ 9, 1560002649, 3, 1111, 2222, 3333 ],
+    "omystr10" : [ "Hello World #1", "", "Hello World #2", "", "Hello World #3", "", "", "", "", "" ],
+    "sval10" : null,
+    "lval10" : null,
+    "lval11" : null,
+    "mystr10" : null,
+    "myView" : {
+      "i" : 3,
+      "i1" : [ 1111, 2222, 3333, 4444, 5555, 6666 ],
+      "s" : "hello world from B"
+    }
+  }

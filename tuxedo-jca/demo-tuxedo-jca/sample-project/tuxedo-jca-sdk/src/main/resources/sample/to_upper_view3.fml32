@@ -1,0 +1,22 @@
+# ------------ ------   --------  ----  -----
+# Name         Number   Type      Flag  Comments
+# ------------ ------   --------  ----  -----
+*base 20000
+SVAL1 			1		short		-   -
+SVAL2 			2		short		-   -
+LVAL1			3		long 		-   -
+LVAL2			4		long 		-   -
+LVAL3			5		long 		-   -
+MYSTR1			6		string		-   -
+MYSTR2			7		string		-   -
+O_SVAL1			8		short		-   -	
+O_SVAL2			9		short		-   -
+O_LVAL1			10		long		-   -   	
+O_LVAL2			11		long		-   -   	
+O_MYSTR10		12		string		-   -
+#
+SVAL10			20		short		-	-
+LVAL10			21		long 		-	-
+LVAL11			22		long 		-	-
+MYSTR10			23		string		-   -
+MY_VIEW			100		view32		-	Defined in View description file

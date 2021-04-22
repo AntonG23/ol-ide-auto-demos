@@ -1,0 +1,566 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for tuxedo-jca-sdk:tuxedo-jca-sdk:jar:0.1
+[WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:build-helper-maven-plugin is missing. @ line 102, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -------------------< tuxedo-jca-sdk:tuxedo-jca-sdk >--------------------
+[INFO] Building tuxedo-jca-sdk 0.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ tuxedo-jca-sdk ---
+[INFO] Deleting c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-source (add-sources) @ tuxedo-jca-sdk ---
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\main\java added.
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\main\kotlin added.
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\generated-sources\annotations added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ tuxedo-jca-sdk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (java-compile) @ tuxedo-jca-sdk ---
+Downloading from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-core/2.11.3/jackson-core-2.11.3.pom
+Progress (1): 0.8/4.9 kBProgress (1): 2.2/4.9 kBProgress (1): 3.6/4.9 kBProgress (1): 4.9 kB                        Downloaded from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-core/2.11.3/jackson-core-2.11.3.pom (4.9 kB at 8.5 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/jackson-base/2.11.3/jackson-base-2.11.3.pom
+Progress (1): 0.8/7.5 kBProgress (1): 2.2/7.5 kBProgress (1): 3.6/7.5 kBProgress (1): 5.0/7.5 kBProgress (1): 6.4/7.5 kBProgress (1): 7.5 kB                        Downloaded from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/jackson-base/2.11.3/jackson-base-2.11.3.pom (7.5 kB at 44 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/jackson-bom/2.11.3/jackson-bom-2.11.3.pom
+Progress (1): 0.8/14 kBProgress (1): 2.2/14 kBProgress (1): 3.6/14 kBProgress (1): 5.0/14 kBProgress (1): 6.4/14 kBProgress (1): 7.8/14 kBProgress (1): 9.2/14 kBProgress (1): 11/14 kB Progress (1): 12/14 kBProgress (1): 13/14 kBProgress (1): 14 kB                      Downloaded from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/jackson-bom/2.11.3/jackson-bom-2.11.3.pom (14 kB at 85 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-databind/2.11.3/jackson-databind-2.11.3.pom
+Progress (1): 0.8/7.4 kBProgress (1): 2.2/7.4 kBProgress (1): 3.6/7.4 kBProgress (1): 5.0/7.4 kBProgress (1): 6.4/7.4 kBProgress (1): 7.4 kB                        Downloaded from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-databind/2.11.3/jackson-databind-2.11.3.pom (7.4 kB at 44 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-annotations/2.11.3/jackson-annotations-2.11.3.pom
+Progress (1): 0.8/3.8 kBProgress (1): 2.2/3.8 kBProgress (1): 3.6/3.8 kBProgress (1): 3.8 kB                        Downloaded from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-annotations/2.11.3/jackson-annotations-2.11.3.pom (3.8 kB at 23 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.3.30/kotlin-stdlib-jdk8-1.3.30.pom
+Progress (1): 0.8/1.8 kBProgress (1): 1.8 kB                        Downloaded from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.3.30/kotlin-stdlib-jdk8-1.3.30.pom (1.8 kB at 11 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib/1.3.30/kotlin-stdlib-1.3.30.pom
+Progress (1): 0.8/1.8 kBProgress (1): 1.8 kB                        Downloaded from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib/1.3.30/kotlin-stdlib-1.3.30.pom (1.8 kB at 11 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib-common/1.3.30/kotlin-stdlib-common-1.3.30.pom
+Progress (1): 0.8/1.6 kBProgress (1): 1.6 kB                        Downloaded from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib-common/1.3.30/kotlin-stdlib-common-1.3.30.pom (1.6 kB at 9.6 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.3.30/kotlin-stdlib-jdk7-1.3.30.pom
+Progress (1): 0.8/1.6 kBProgress (1): 1.6 kB                        Downloaded from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.3.30/kotlin-stdlib-jdk7-1.3.30.pom (1.6 kB at 9.6 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib/1.3.72/kotlin-stdlib-1.3.72.pom
+Progress (1): 0.8/1.8 kBProgress (1): 1.8 kB                        Downloaded from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib/1.3.72/kotlin-stdlib-1.3.72.pom (1.8 kB at 11 kB/s)
+[INFO] Compiling 7 source files to c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\classes
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-test-source (add-test-sources) @ tuxedo-jca-sdk ---
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\test\java added.
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\test\kotlin added.
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\generated-test-sources\test-annotations added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ tuxedo-jca-sdk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (java-test-compile) @ tuxedo-jca-sdk ---
+[INFO] Compiling 3 source files to c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ tuxedo-jca-sdk ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ tuxedo-jca-sdk ---
+[INFO] Building jar: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\tuxedo-jca-sdk-0.1.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ tuxedo-jca-sdk ---
+[INFO] Installing c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\tuxedo-jca-sdk-0.1.jar to C:\Users\Administrator\.m2\repository\tuxedo-jca-sdk\tuxedo-jca-sdk\0.1\tuxedo-jca-sdk-0.1.jar
+[INFO] Installing c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\pom.xml to C:\Users\Administrator\.m2\repository\tuxedo-jca-sdk\tuxedo-jca-sdk\0.1\tuxedo-jca-sdk-0.1.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  16.604 s
+[INFO] Finished at: 2020-11-12T14:28:32+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for tuxedo-jca-sdk:tuxedo-jca-sdk:jar:0.1
+[WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:build-helper-maven-plugin is missing. @ line 102, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -------------------< tuxedo-jca-sdk:tuxedo-jca-sdk >--------------------
+[INFO] Building tuxedo-jca-sdk 0.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ tuxedo-jca-sdk ---
+[INFO] Deleting c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-source (add-sources) @ tuxedo-jca-sdk ---
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\main\java added.
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\main\kotlin added.
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\generated-sources\annotations added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ tuxedo-jca-sdk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (java-compile) @ tuxedo-jca-sdk ---
+[INFO] Compiling 7 source files to c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\classes
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-test-source (add-test-sources) @ tuxedo-jca-sdk ---
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\test\java added.
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\test\kotlin added.
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\generated-test-sources\test-annotations added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ tuxedo-jca-sdk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (java-test-compile) @ tuxedo-jca-sdk ---
+[INFO] Compiling 3 source files to c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ tuxedo-jca-sdk ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ tuxedo-jca-sdk ---
+[INFO] Building jar: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\tuxedo-jca-sdk-0.1.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ tuxedo-jca-sdk ---
+[INFO] Installing c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\tuxedo-jca-sdk-0.1.jar to C:\Users\Administrator\.m2\repository\tuxedo-jca-sdk\tuxedo-jca-sdk\0.1\tuxedo-jca-sdk-0.1.jar
+[INFO] Installing c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\pom.xml to C:\Users\Administrator\.m2\repository\tuxedo-jca-sdk\tuxedo-jca-sdk\0.1\tuxedo-jca-sdk-0.1.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  13.288 s
+[INFO] Finished at: 2020-11-12T14:47:22+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for tuxedo-jca-sdk:tuxedo-jca-sdk:jar:0.1
+[WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:build-helper-maven-plugin is missing. @ line 102, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -------------------< tuxedo-jca-sdk:tuxedo-jca-sdk >--------------------
+[INFO] Building tuxedo-jca-sdk 0.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ tuxedo-jca-sdk ---
+[INFO] Deleting c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-source (add-sources) @ tuxedo-jca-sdk ---
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\main\java added.
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\main\kotlin added.
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\generated-sources\annotations added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ tuxedo-jca-sdk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (java-compile) @ tuxedo-jca-sdk ---
+Downloading from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-core/2.11.3/jackson-core-2.11.3.pom
+Progress (1): 0.8/4.9 kBProgress (1): 2.2/4.9 kBProgress (1): 3.6/4.9 kBProgress (1): 4.9 kB                        Downloaded from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-core/2.11.3/jackson-core-2.11.3.pom (4.9 kB at 8.9 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/jackson-base/2.11.3/jackson-base-2.11.3.pom
+Progress (1): 0.8/7.5 kBProgress (1): 2.2/7.5 kBProgress (1): 3.6/7.5 kBProgress (1): 5.0/7.5 kBProgress (1): 6.4/7.5 kBProgress (1): 7.5 kB                        Downloaded from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/jackson-base/2.11.3/jackson-base-2.11.3.pom (7.5 kB at 50 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/jackson-bom/2.11.3/jackson-bom-2.11.3.pom
+Progress (1): 0.8/14 kBProgress (1): 2.2/14 kBProgress (1): 3.6/14 kBProgress (1): 5.0/14 kBProgress (1): 6.4/14 kBProgress (1): 7.8/14 kBProgress (1): 9.2/14 kBProgress (1): 11/14 kB Progress (1): 12/14 kBProgress (1): 13/14 kBProgress (1): 14 kB                      Downloaded from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/jackson-bom/2.11.3/jackson-bom-2.11.3.pom (14 kB at 95 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-databind/2.11.3/jackson-databind-2.11.3.pom
+Progress (1): 0.8/7.4 kBProgress (1): 2.2/7.4 kBProgress (1): 3.6/7.4 kBProgress (1): 5.0/7.4 kBProgress (1): 6.4/7.4 kBProgress (1): 7.4 kB                        Downloaded from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-databind/2.11.3/jackson-databind-2.11.3.pom (7.4 kB at 49 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-annotations/2.11.3/jackson-annotations-2.11.3.pom
+Progress (1): 0.8/3.8 kBProgress (1): 2.2/3.8 kBProgress (1): 3.6/3.8 kBProgress (1): 3.8 kB                        Downloaded from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-annotations/2.11.3/jackson-annotations-2.11.3.pom (3.8 kB at 26 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.3.30/kotlin-stdlib-jdk8-1.3.30.pom
+Progress (1): 0.8/1.8 kBProgress (1): 1.8 kB                        Downloaded from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.3.30/kotlin-stdlib-jdk8-1.3.30.pom (1.8 kB at 12 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib/1.3.30/kotlin-stdlib-1.3.30.pom
+Progress (1): 0.8/1.8 kBProgress (1): 1.8 kB                        Downloaded from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib/1.3.30/kotlin-stdlib-1.3.30.pom (1.8 kB at 12 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib-common/1.3.30/kotlin-stdlib-common-1.3.30.pom
+Progress (1): 0.8/1.6 kBProgress (1): 1.6 kB                        Downloaded from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib-common/1.3.30/kotlin-stdlib-common-1.3.30.pom (1.6 kB at 11 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.3.30/kotlin-stdlib-jdk7-1.3.30.pom
+Progress (1): 0.8/1.6 kBProgress (1): 1.6 kB                        Downloaded from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.3.30/kotlin-stdlib-jdk7-1.3.30.pom (1.6 kB at 11 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib/1.3.72/kotlin-stdlib-1.3.72.pom
+Progress (1): 0.8/1.8 kBProgress (1): 1.8 kB                        Downloaded from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib/1.3.72/kotlin-stdlib-1.3.72.pom (1.8 kB at 12 kB/s)
+[INFO] Compiling 7 source files to c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\classes
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-test-source (add-test-sources) @ tuxedo-jca-sdk ---
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\test\java added.
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\test\kotlin added.
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\generated-test-sources\test-annotations added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ tuxedo-jca-sdk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (java-test-compile) @ tuxedo-jca-sdk ---
+[INFO] Compiling 3 source files to c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ tuxedo-jca-sdk ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ tuxedo-jca-sdk ---
+[INFO] Building jar: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\tuxedo-jca-sdk-0.1.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ tuxedo-jca-sdk ---
+[INFO] Installing c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\tuxedo-jca-sdk-0.1.jar to C:\Users\Administrator\.m2\repository\tuxedo-jca-sdk\tuxedo-jca-sdk\0.1\tuxedo-jca-sdk-0.1.jar
+[INFO] Installing c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\pom.xml to C:\Users\Administrator\.m2\repository\tuxedo-jca-sdk\tuxedo-jca-sdk\0.1\tuxedo-jca-sdk-0.1.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  16.304 s
+[INFO] Finished at: 2020-11-15T15:48:31+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for tuxedo-jca-sdk:tuxedo-jca-sdk:jar:0.1
+[WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:build-helper-maven-plugin is missing. @ line 102, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -------------------< tuxedo-jca-sdk:tuxedo-jca-sdk >--------------------
+[INFO] Building tuxedo-jca-sdk 0.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ tuxedo-jca-sdk ---
+[INFO] Deleting c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-source (add-sources) @ tuxedo-jca-sdk ---
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\main\java added.
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\main\kotlin added.
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\generated-sources\annotations added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ tuxedo-jca-sdk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (java-compile) @ tuxedo-jca-sdk ---
+Downloading from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-core/2.11.3/jackson-core-2.11.3.pom
+Progress (1): 0.8/4.9 kBProgress (1): 2.2/4.9 kBProgress (1): 3.6/4.9 kBProgress (1): 4.9 kB                        Downloaded from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-core/2.11.3/jackson-core-2.11.3.pom (4.9 kB at 7.9 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/jackson-base/2.11.3/jackson-base-2.11.3.pom
+Progress (1): 0.8/7.5 kBProgress (1): 2.2/7.5 kBProgress (1): 3.6/7.5 kBProgress (1): 5.0/7.5 kBProgress (1): 6.4/7.5 kBProgress (1): 7.5 kB                        Downloaded from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/jackson-base/2.11.3/jackson-base-2.11.3.pom (7.5 kB at 21 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/jackson-bom/2.11.3/jackson-bom-2.11.3.pom
+Progress (1): 0.8/14 kBProgress (1): 2.2/14 kBProgress (1): 3.6/14 kBProgress (1): 5.0/14 kBProgress (1): 6.4/14 kBProgress (1): 7.8/14 kBProgress (1): 9.2/14 kBProgress (1): 11/14 kB Progress (1): 12/14 kBProgress (1): 13/14 kBProgress (1): 14 kB                      Downloaded from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/jackson-bom/2.11.3/jackson-bom-2.11.3.pom (14 kB at 83 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-databind/2.11.3/jackson-databind-2.11.3.pom
+Progress (1): 0.8/7.4 kBProgress (1): 2.2/7.4 kBProgress (1): 3.6/7.4 kBProgress (1): 5.0/7.4 kBProgress (1): 6.4/7.4 kBProgress (1): 7.4 kB                        Downloaded from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-databind/2.11.3/jackson-databind-2.11.3.pom (7.4 kB at 43 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-annotations/2.11.3/jackson-annotations-2.11.3.pom
+Progress (1): 0.8/3.8 kBProgress (1): 2.2/3.8 kBProgress (1): 3.6/3.8 kBProgress (1): 3.8 kB                        Downloaded from jcenter: https://jcenter.bintray.com/com/fasterxml/jackson/core/jackson-annotations/2.11.3/jackson-annotations-2.11.3.pom (3.8 kB at 3.3 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.3.30/kotlin-stdlib-jdk8-1.3.30.pom
+Progress (1): 0.8/1.8 kBProgress (1): 1.8 kB                        Downloaded from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.3.30/kotlin-stdlib-jdk8-1.3.30.pom (1.8 kB at 1.5 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib/1.3.30/kotlin-stdlib-1.3.30.pom
+Progress (1): 0.8/1.8 kBProgress (1): 1.8 kB                        Downloaded from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib/1.3.30/kotlin-stdlib-1.3.30.pom (1.8 kB at 11 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib-common/1.3.30/kotlin-stdlib-common-1.3.30.pom
+Progress (1): 0.8/1.6 kBProgress (1): 1.6 kB                        Downloaded from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib-common/1.3.30/kotlin-stdlib-common-1.3.30.pom (1.6 kB at 9.7 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.3.30/kotlin-stdlib-jdk7-1.3.30.pom
+Progress (1): 0.8/1.6 kBProgress (1): 1.6 kB                        Downloaded from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.3.30/kotlin-stdlib-jdk7-1.3.30.pom (1.6 kB at 9.6 kB/s)
+Downloading from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib/1.3.72/kotlin-stdlib-1.3.72.pom
+Progress (1): 0.8/1.8 kBProgress (1): 1.8 kB                        Downloaded from jcenter: https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib/1.3.72/kotlin-stdlib-1.3.72.pom (1.8 kB at 11 kB/s)
+[INFO] Compiling 7 source files to c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\classes
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-test-source (add-test-sources) @ tuxedo-jca-sdk ---
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\test\java added.
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\test\kotlin added.
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\generated-test-sources\test-annotations added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ tuxedo-jca-sdk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (java-test-compile) @ tuxedo-jca-sdk ---
+[INFO] Compiling 3 source files to c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ tuxedo-jca-sdk ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ tuxedo-jca-sdk ---
+[INFO] Building jar: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\tuxedo-jca-sdk-0.1.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ tuxedo-jca-sdk ---
+[INFO] Installing c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\tuxedo-jca-sdk-0.1.jar to C:\Users\Administrator\.m2\repository\tuxedo-jca-sdk\tuxedo-jca-sdk\0.1\tuxedo-jca-sdk-0.1.jar
+[INFO] Installing c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\pom.xml to C:\Users\Administrator\.m2\repository\tuxedo-jca-sdk\tuxedo-jca-sdk\0.1\tuxedo-jca-sdk-0.1.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  19.467 s
+[INFO] Finished at: 2020-11-16T11:10:05+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for tuxedo-jca-sdk:tuxedo-jca-sdk:jar:0.1
+[WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:build-helper-maven-plugin is missing. @ line 102, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -------------------< tuxedo-jca-sdk:tuxedo-jca-sdk >--------------------
+[INFO] Building tuxedo-jca-sdk 0.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ tuxedo-jca-sdk ---
+[INFO] Deleting c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-source (add-sources) @ tuxedo-jca-sdk ---
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\main\java added.
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\main\kotlin added.
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\generated-sources\annotations added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ tuxedo-jca-sdk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (java-compile) @ tuxedo-jca-sdk ---
+[INFO] Compiling 7 source files to c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\classes
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-test-source (add-test-sources) @ tuxedo-jca-sdk ---
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\test\java added.
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\test\kotlin added.
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\generated-test-sources\test-annotations added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ tuxedo-jca-sdk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (java-test-compile) @ tuxedo-jca-sdk ---
+[INFO] Compiling 3 source files to c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ tuxedo-jca-sdk ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ tuxedo-jca-sdk ---
+[INFO] Building jar: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\tuxedo-jca-sdk-0.1.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ tuxedo-jca-sdk ---
+[INFO] Installing c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\tuxedo-jca-sdk-0.1.jar to C:\Users\Administrator\.m2\repository\tuxedo-jca-sdk\tuxedo-jca-sdk\0.1\tuxedo-jca-sdk-0.1.jar
+[INFO] Installing c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\pom.xml to C:\Users\Administrator\.m2\repository\tuxedo-jca-sdk\tuxedo-jca-sdk\0.1\tuxedo-jca-sdk-0.1.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  14.114 s
+[INFO] Finished at: 2020-11-16T11:45:02+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for tuxedo-jca-sdk:tuxedo-jca-sdk:jar:0.1
+[WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:build-helper-maven-plugin is missing. @ line 102, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -------------------< tuxedo-jca-sdk:tuxedo-jca-sdk >--------------------
+[INFO] Building tuxedo-jca-sdk 0.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ tuxedo-jca-sdk ---
+[INFO] Deleting c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-source (add-sources) @ tuxedo-jca-sdk ---
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\main\java added.
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\main\kotlin added.
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\generated-sources\annotations added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ tuxedo-jca-sdk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (java-compile) @ tuxedo-jca-sdk ---
+[INFO] Compiling 7 source files to c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\classes
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-test-source (add-test-sources) @ tuxedo-jca-sdk ---
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\test\java added.
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\test\kotlin added.
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\generated-test-sources\test-annotations added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ tuxedo-jca-sdk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (java-test-compile) @ tuxedo-jca-sdk ---
+[INFO] Compiling 3 source files to c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ tuxedo-jca-sdk ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ tuxedo-jca-sdk ---
+[INFO] Building jar: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\tuxedo-jca-sdk-0.1.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ tuxedo-jca-sdk ---
+[INFO] Installing c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\tuxedo-jca-sdk-0.1.jar to C:\Users\Administrator\.m2\repository\tuxedo-jca-sdk\tuxedo-jca-sdk\0.1\tuxedo-jca-sdk-0.1.jar
+[INFO] Installing c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\pom.xml to C:\Users\Administrator\.m2\repository\tuxedo-jca-sdk\tuxedo-jca-sdk\0.1\tuxedo-jca-sdk-0.1.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  14.005 s
+[INFO] Finished at: 2020-11-16T12:55:13+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for tuxedo-jca-sdk:tuxedo-jca-sdk:jar:0.1
+[WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:build-helper-maven-plugin is missing. @ line 102, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -------------------< tuxedo-jca-sdk:tuxedo-jca-sdk >--------------------
+[INFO] Building tuxedo-jca-sdk 0.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ tuxedo-jca-sdk ---
+[INFO] Deleting c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-source (add-sources) @ tuxedo-jca-sdk ---
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\main\java added.
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\main\kotlin added.
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\generated-sources\annotations added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ tuxedo-jca-sdk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (java-compile) @ tuxedo-jca-sdk ---
+[INFO] Compiling 7 source files to c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\classes
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-test-source (add-test-sources) @ tuxedo-jca-sdk ---
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\test\java added.
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\test\kotlin added.
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\generated-test-sources\test-annotations added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ tuxedo-jca-sdk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (java-test-compile) @ tuxedo-jca-sdk ---
+[INFO] Compiling 3 source files to c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ tuxedo-jca-sdk ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ tuxedo-jca-sdk ---
+[INFO] Building jar: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\tuxedo-jca-sdk-0.1.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ tuxedo-jca-sdk ---
+[INFO] Installing c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\tuxedo-jca-sdk-0.1.jar to C:\Users\Administrator\.m2\repository\tuxedo-jca-sdk\tuxedo-jca-sdk\0.1\tuxedo-jca-sdk-0.1.jar
+[INFO] Installing c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\pom.xml to C:\Users\Administrator\.m2\repository\tuxedo-jca-sdk\tuxedo-jca-sdk\0.1\tuxedo-jca-sdk-0.1.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  13.775 s
+[INFO] Finished at: 2020-11-16T14:08:42+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for tuxedo-jca-sdk:tuxedo-jca-sdk:jar:0.1
+[WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:build-helper-maven-plugin is missing. @ line 106, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -------------------< tuxedo-jca-sdk:tuxedo-jca-sdk >--------------------
+[INFO] Building tuxedo-jca-sdk 0.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ tuxedo-jca-sdk ---
+[INFO] Deleting c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-source (add-sources) @ tuxedo-jca-sdk ---
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\main\java added.
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\main\kotlin added.
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\generated-sources\annotations added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ tuxedo-jca-sdk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (java-compile) @ tuxedo-jca-sdk ---
+[INFO] Compiling 7 source files to c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\classes
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-test-source (add-test-sources) @ tuxedo-jca-sdk ---
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\test\java added.
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\test\kotlin added.
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\generated-test-sources\test-annotations added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ tuxedo-jca-sdk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (java-test-compile) @ tuxedo-jca-sdk ---
+[INFO] Compiling 3 source files to c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ tuxedo-jca-sdk ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ tuxedo-jca-sdk ---
+[INFO] Building jar: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\tuxedo-jca-sdk-0.1.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ tuxedo-jca-sdk ---
+[INFO] Installing c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\tuxedo-jca-sdk-0.1.jar to C:\Users\Administrator\.m2\repository\tuxedo-jca-sdk\tuxedo-jca-sdk\0.1\tuxedo-jca-sdk-0.1.jar
+[INFO] Installing c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\pom.xml to C:\Users\Administrator\.m2\repository\tuxedo-jca-sdk\tuxedo-jca-sdk\0.1\tuxedo-jca-sdk-0.1.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  13.216 s
+[INFO] Finished at: 2020-11-18T14:20:43+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for tuxedo-jca-sdk:tuxedo-jca-sdk:jar:0.1
+[WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:build-helper-maven-plugin is missing. @ line 106, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -------------------< tuxedo-jca-sdk:tuxedo-jca-sdk >--------------------
+[INFO] Building tuxedo-jca-sdk 0.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ tuxedo-jca-sdk ---
+[INFO] Deleting c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-source (add-sources) @ tuxedo-jca-sdk ---
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\main\java added.
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\main\kotlin added.
+[INFO] Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\generated-sources\annotations added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ tuxedo-jca-sdk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (java-compile) @ tuxedo-jca-sdk ---
+[INFO] Compiling 7 source files to c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\classes
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-test-source (add-test-sources) @ tuxedo-jca-sdk ---
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\test\java added.
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\src\test\kotlin added.
+[INFO] Test Source directory: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\generated-test-sources\test-annotations added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ tuxedo-jca-sdk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (java-test-compile) @ tuxedo-jca-sdk ---
+[INFO] Compiling 3 source files to c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ tuxedo-jca-sdk ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ tuxedo-jca-sdk ---
+[INFO] Building jar: c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\tuxedo-jca-sdk-0.1.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ tuxedo-jca-sdk ---
+[INFO] Installing c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\target\tuxedo-jca-sdk-0.1.jar to C:\Users\Administrator\.m2\repository\tuxedo-jca-sdk\tuxedo-jca-sdk\0.1\tuxedo-jca-sdk-0.1.jar
+[INFO] Installing c:\jenkins\workspace\rcp-testing-pipeline\automation-tests\api-test\..\..\sample-project\tuxedo-jca-sdk\pom.xml to C:\Users\Administrator\.m2\repository\tuxedo-jca-sdk\tuxedo-jca-sdk\0.1\tuxedo-jca-sdk-0.1.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  13.859 s
+[INFO] Finished at: 2020-12-16T16:30:58+02:00
+[INFO] ------------------------------------------------------------------------

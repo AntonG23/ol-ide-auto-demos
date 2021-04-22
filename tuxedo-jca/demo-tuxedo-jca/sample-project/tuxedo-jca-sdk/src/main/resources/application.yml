@@ -1,0 +1,10 @@
+ol:
+  tuxedo:
+    project:
+      tuxedoJcaSdk:
+        localAccessPoint: //3.212.126.138:12001/domainId=REMOTE_01
+        remoteAccessPoint: //3.212.126.138:12002/domainId=LOCAL_01
+        autoTransaction: false
+  license:
+    key: eyJhbGciOiJSUzI1NiJ9.eyJwcm9kdWN0Ijoib3BlbmxlZ2FjeS1jb3JlIiwic3ViIjoib2wiLCJpc3N1ZWRfYXQiOiIyMDIwLTA5LTA5VDExOjAzOjEwLjMzNVoiLCJ2YWxpZF9mb3IiOi0xfQ.pLPwaVG73DCY1TSOrrvGo_dRIfz2TLXfrbb5qUO-jM1ndchxE1hvwNbNXh1ZZc415OjGAJ1w-QIT9NlXCqTJhnm6eFmnzGYdXbMDGkzW1b6pKQXz_P5pJmw1ZV5TCw-KziYO1Jl9JEGfkK22ITq1Y7Nou5uIdminO1-jAgPMq8V1wToo3MMMPXaN9NmMqQF0y7f9Roc2YJy3jYvy89al3G2VIJAhAOiUPIw0kYoKYK_E31L8GRzqOS85ZJtD12W5qQwmRZxVtlMFDasF7b7GeynljpwlR7xJsxWH8nIClAQFKoZZ9Y9-ZgVZRythQmX3NzN-wbindm47utTRwtGovA
+

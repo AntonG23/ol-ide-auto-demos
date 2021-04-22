@@ -1,0 +1,14 @@
+VIEW MYVIEWS
+#Type	cName	fbName		Count	Flag	Size	Null 
+short	sVal	SVAL1 		1	-	-	-1
+long	lVal	LVAL1		1	-	-	-1
+string	szStr1	MYSTR1		1	-	128	"\0"
+string	szStr2	MYSTR2		1	-	128	"\0"
+END
+
+VIEW MYVIEWR
+#Type	cName	fbName		Count	Flag	Size	Null 
+short	sVal	O_SVAL1 	1	-	-	-1
+long	lVal	O_LVAL1		1	-	-	-1
+string	szStr1	O_MYSTR1	1	-	128	"\0"
+END

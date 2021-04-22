@@ -1,0 +1,20 @@
+VIEW MYVIEWB
+#Type	cName	fbName		Count	Flag	Size	Null 
+long 	I		LVAL1 		1		-		-		0
+long	i		LVAL2		10		-		-		0
+string	s		MYSTR1		1		-		128		"\003"
+END
+
+VIEW MYVIEWA
+#Type	cName	fbName		Count	Flag	Size	Null 
+long	y		LVAL10		1		-		-		0
+long	d		LVAL11		1		-		-		0
+string	x		MYSTR10		1		-		128		"\003"
+struct 	MYVIEWB	MY_VIEW		1		-		-		NONE
+END
+
+VIEW MYVIEWC
+#Type	cName	fbName		Count	Flag	Size	Null 
+long	lVal	O_LVAL2		10		-		-		0
+string	szStr1	O_MYSTR10	10		-		128		"\003"
+END

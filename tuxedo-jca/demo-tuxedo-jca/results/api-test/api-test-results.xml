@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Tuxedo-Jca" tests="1" time="1.136">
+  <testsuite name="ViewEntity" id="77c15795-6ad3-4e21-a10c-9f6d5c51c87b" timestamp="2020-12-16T14:31:39.890Z" tests="2" failures="0" errors="0" time="0.568">
+    <testcase name="Successful GET request" time="0.568" classname="TuxedoJca"/>
+    <testcase name="Assert by values" time="0.568" classname="TuxedoJca"/>
+  </testsuite>
+</testsuites>

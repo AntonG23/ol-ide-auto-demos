@@ -1,0 +1,42 @@
+---
+ol:
+  config:
+    apiSourceFolder: "src/main/java"
+    apiPackage: "com.tuxedo_sdk.openlegacy"
+    webPackage: "com.tuxedo_sdk.openlegacy.web"
+    provider: "openlegacy-tuxedo"
+    sourceFetcher: "sourceFetcher"
+    designtimeContext: "default"
+    backendSolution: "TUXEDO_JOLT"
+    frontendSolution: "JAVA"
+    userName: ""
+    password: ""
+    hostName: "//tuxedo.openlegacy.org:8001"
+    legacyFilename: "GETUSERDETAILS"
+    db2Type: "NONE"
+    rpc:
+      generateRpcPartAsExternalClass: true
+    additionalProperties:
+      APP_PASSWORD: ""
+      USER_ROLE: ""
+    designtime:
+      parser:
+        cobol:
+          addMissedDots: false
+          handleDuplicateNames: false
+        wsdl:
+          removeNamespaceTrailingSlash: false
+        pli:
+          getDirectionByFieldNamePattern: false
+          inputFieldPattern: ""
+          outputFieldPattern: ""
+        csv:
+          delimiter: ","
+      mapping:
+        converters: []
+      advancedParameters: []
+    swagger:
+      updateConfigInfoFromContractFile: true
+    file:
+      defaultStringLength: 255
+    modules: {}

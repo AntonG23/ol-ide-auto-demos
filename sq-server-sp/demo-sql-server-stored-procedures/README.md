@@ -6,7 +6,7 @@ This demo shows generation of Java models from **MS SQL Stored Procedure** using
 
 ## Architecture
 
-![MSSQL Server Stored Procedure Architecture](/assets/images/mssql-sp.png)
+![MSSQL Server Stored Procedure Architecture](./assets/images/mssql-sp.png)
 
 ## Pre-Requirements
 
@@ -38,7 +38,7 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
    - **Database Password:** `Open1egacy`
 7. Click **Finish**
 
-![How to create SDK Project](/assets/images/createSDK.gif)
+![How to create SDK Project](./assets/images/createSDK.gif)
 
 ## Step 2 – Generate Java Model (Entity) from Stored Procedure
 
@@ -59,7 +59,7 @@ The purpose of the SDK project is to allow easy access to legacy backends, using
    4. Remove the following annotation: `@RpcDateField(pattern = "yyyy-MM-dd HH:mm:ss")` (if needed).
    5. Maven clean and maven install. 
 
-![How to fetch stored procedure](/assets/images/fetchSP.gif)
+![How to fetch stored procedure](./assets/images/fetchSP.gif)
 
 ## Step 3 – Create a JUnit Test
 
@@ -315,7 +315,7 @@ We can extend this test suite with additional unit tests to validate our connect
 7. Open the SDK folder
 8. Add the **ProcGetAllExpiredCreditCards** to the **Output box** then click **OK**.
 
-![Alt Text](/assets/images/generateAPI.gif)
+![Alt Text](./assets/images/generateAPI.gif)
 
 ## Step 5 - Run and Test your API
 
@@ -345,7 +345,7 @@ We can extend this test suite with additional unit tests to validate our connect
      }
      ```
 
-![Alt Text](/assets/images/runAPI.gif)
+![Alt Text](./assets/images/runAPI.gif)
 
 ## Summary
 
