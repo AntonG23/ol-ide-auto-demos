@@ -4,11 +4,11 @@
 
 ## Introduction
 
-This exercise will develop yours skill with OpenLegacy IDE by creating simple Java entities from 3270 screens from a Mainframe host.
+This exercise will develop your skills with the OpenLegacy IDE by creating simple Java entities from 3270 screens from a Mainframe host.
 
 ## Pre-Requirements
 
-OpenLegacy IDE 4.5.8 (Full installation including JDK and all Maven dependencies).
+OpenLegacy IDE 4.6.12 (Full installation including JDK and all Maven dependencies).
 Internet Connection
 
 ## Exercise Definition
