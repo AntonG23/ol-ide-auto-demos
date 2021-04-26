@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This exercise will develop yours skill with OpenLegacy IDE by creating simple Java entities from 3270 screens from a Mainframe host.
+This exercise will develop your skills with the OpenLegacy IDE by creating simple Java entities from 3270 screens from a Mainframe host.
 
 ## Pre-Requirements
 
