@@ -1,0 +1,14 @@
+{
+  "statusCode" : "200",
+  "account" : {
+    "accountId" : "61",
+    "accountNumber" : "3535899739559196",
+    "fullName" : "Ray Buckthorp",
+    "email" : "rbuckthorp1o@dedecms.com",
+    "iban" : "FO89 2800 2832 7492 80",
+    "creditCardType" : "jcb",
+    "accCurrencyCode" : "BSD",
+    "balance" : "-6048780.05",
+    "creattionDate" : "1992-05-01 12:00:00"
+  }
+}

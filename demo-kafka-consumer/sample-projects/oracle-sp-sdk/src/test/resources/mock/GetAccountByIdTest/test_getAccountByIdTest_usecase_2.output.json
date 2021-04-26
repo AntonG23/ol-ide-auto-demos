@@ -1,0 +1,14 @@
+{
+  "statusCode" : "200",
+  "account" : {
+    "accountId" : "63",
+    "accountNumber" : "3566238931858654",
+    "fullName" : "Janice Manton",
+    "email" : "jmanton1q@washingtonpost.com",
+    "iban" : "AE02 6548 4953 5438 6157 907",
+    "creditCardType" : "jcb",
+    "accCurrencyCode" : "PHP",
+    "balance" : "-3187183.75",
+    "creattionDate" : "1995-01-13 12:00:00"
+  }
+}
