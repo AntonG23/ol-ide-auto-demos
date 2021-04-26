@@ -1,0 +1,11 @@
+{
+  "customerid" : "0001",
+  "firstname" : "",
+  "lastname" : "",
+  "address" : "",
+  "credit" : "",
+  "discount" : 0,
+  "balance" : 0,
+  "phone" : "",
+  "status" : ""
+}

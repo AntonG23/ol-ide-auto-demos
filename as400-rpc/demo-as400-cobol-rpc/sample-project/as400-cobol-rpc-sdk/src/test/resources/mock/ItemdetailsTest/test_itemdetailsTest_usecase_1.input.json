@@ -1,0 +1,12 @@
+{
+  "itemNum" : 1000,
+  "itemRecord" : {
+    "itemName" : "",
+    "description" : "",
+    "weight" : 0
+  },
+  "shipping" : {
+    "shippingMethod" : "",
+    "days" : 0
+  }
+}

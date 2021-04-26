@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="AS400-PCML-RPC" tests="1" time="3.238">
+  <testsuite name="as400-pcml-rpc-customer" id="4502d412-f1b6-46ca-8ad9-8819e6672860" timestamp="2021-02-21T15:09:29.091Z" tests="2" failures="0" errors="0" time="1.619">
+    <testcase name="Successful GET request" time="1.619" classname="As400PcmlRpc"/>
+    <testcase name="Assert by values" time="1.619" classname="As400PcmlRpc"/>
+  </testsuite>
+</testsuites>

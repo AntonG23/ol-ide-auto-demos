@@ -1,0 +1,12 @@
+  {
+    "itemNum" : 1004,
+    "itemRecord" : {
+      "itemName" : "Pig Bank",
+      "description" : "Pig Saving Bank - Ceramics",
+      "weight" : 5000
+    },
+    "shipping" : {
+      "shippingMethod" : "AIR MAIL",
+      "days" : 2
+    }
+  }

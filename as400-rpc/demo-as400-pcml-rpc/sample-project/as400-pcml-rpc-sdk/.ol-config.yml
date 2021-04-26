@@ -1,0 +1,41 @@
+---
+ol:
+  config:
+    apiSourceFolder: "src/main/java"
+    apiPackage: "com.as400_pcml_rpc_sdk.openlegacy"
+    webPackage: "com.as400_pcml_rpc_sdk.openlegacy.web"
+    generateTest: true
+    provider: "openlegacy-jt400"
+    sourceFetcher: "sourceFetcher"
+    designtimeContext: "default"
+    backendSolution: "AS400_RPC"
+    frontendSolution: "JAVA"
+    userName: "OPENLEGA1"
+    password: "OPENLEGA"
+    hostName: "OPENLEG.RZKH.DE"
+    legacyFilename: "/QSYS.LIB/OPENLEGA11.LIB/GETCST.PGM"
+    db2Type: "NONE"
+    rpc:
+      generateRpcPartAsExternalClass: true
+    additionalProperties: {}
+    designtime:
+      parser:
+        cobol:
+          addMissedDots: false
+          handleDuplicateNames: false
+        wsdl:
+          removeNamespaceTrailingSlash: false
+        pli:
+          getDirectionByFieldNamePattern: false
+          inputFieldPattern: ""
+          outputFieldPattern: ""
+        csv:
+          delimiter: ","
+      mapping:
+        converters: []
+      advancedParameters: []
+    swagger:
+      updateConfigInfoFromContractFile: true
+    file:
+      defaultStringLength: 255
+    modules: {}

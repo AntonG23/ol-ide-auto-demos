@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "d6dc5897-5014-4426-a75d-ed5d77bcdef9",
+		"name": "AS400-PCML-RPC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "as400-pcml-rpc-customer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f3c89e02-3bc5-4f90-947b-524df9cb1cc0",
+						"exec": [
+							"pm.test(\"Successful GET request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);",
+							"});",
+							"",
+							"pm.test(\"Assert by values\", function () {",
+							"    var jsonData = responseBody;",
+							"    var jsonOutput = pm.environment.get(\"jsonOutput\");",
+							"  pm.expect(jsonData).to.equal(jsonOutput);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "9ad30df4-1c9c-4084-9f94-a8638e73dd52",
+						"exec": [
+							"\r",
+							"const tokenUrl = 'http://127.0.0.1:8080/oauth/token';\r",
+							"const clientId = 'client_id';\r",
+							"const clientSecret = 'client_secret';\r",
+							"\r",
+							"const getTokenRequest = {\r",
+							"  method: 'POST',\r",
+							"  url: tokenUrl,\r",
+							"  header:{\r",
+							"    'content-type': 'application/x-www-form-urlencoded',\r",
+							"    'Authorization': 'Basic Y2xpZW50X2lkOmNsaWVudF9zZWNyZXQ='\r",
+							"  },\r",
+							"  body: {\r",
+							"      mode: 'formdata',\r",
+							"      formdata: [\r",
+							"          { key: 'grant_type', value: 'client_credentials' },\r",
+							"          { key: 'client_id', value: clientId },\r",
+							"          { key: 'client_secret', value: clientSecret }\r",
+							"        //   { key: 'scope', value: 'read write trust ol_admin'}\r",
+							"\r",
+							"      ]\r",
+							"  }\r",
+							"};\r",
+							" \r",
+							"\r",
+							"pm.sendRequest(getTokenRequest, (err, response) => {\r",
+							"    if(err === null)\r",
+							"    {\r",
+							"  const jsonResponse = response.json();\r",
+							"  const newAccessToken = jsonResponse.access_token;\r",
+							"    \r",
+							"  pm.variables.set('access_token', newAccessToken);\r",
+							"    }\r",
+							"    else console.log(formdata);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "{{access_token}}",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"customerid\": \"0001\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/customer?customer=\"0001\"",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customer"
+					],
+					"query": [
+						{
+							"key": "customer",
+							"value": "\"0001\""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

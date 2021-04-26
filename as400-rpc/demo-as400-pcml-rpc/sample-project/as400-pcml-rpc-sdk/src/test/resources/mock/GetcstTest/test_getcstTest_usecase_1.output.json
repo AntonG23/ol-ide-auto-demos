@@ -1,0 +1,11 @@
+{
+   "customerid" : "0001",
+   "firstname" : "Annie",
+   "lastname" : "OAKLEY",
+   "address" : "00001 Ave. ABC",
+   "credit" : "GC",
+   "discount" : 0.114,
+   "balance" : 1315.05,
+   "phone" : "6789012078912345",
+   "status" : "OK"
+} 

@@ -1,0 +1,13 @@
+ol:
+  jt400:
+    project:
+      accountAs400PcmlSdk:
+        external-libs:
+        - RMR2L1
+        host: as400j.openlegacy.com
+        user: OPENLEGA1
+        password: '{cipher}74212c90661fc8428075c5ef2bbb63b34e6efe9b52c82d44572293f38e4bc7c7'
+        code-page: 37
+  license:
+    key: eyJhbGciOiJSUzI1NiJ9.eyJwcm9kdWN0Ijoib3BlbmxlZ2FjeS1jb3JlIiwic3ViIjoib2wiLCJpc3N1ZWRfYXQiOiIyMDIxLTAzLTMxVDExOjE1OjQ3LjQwOFoiLCJ2YWxpZF9mb3IiOjkwLCJjdXN0b21lcl9uYW1lIjoiLS1uYW1lIGRlbW9zIn0.CZILA_rxXSba8Yk__fW_GZf82tJ_6R-BAH8zDnxNBC8Ch2-i_UkvhHU762W1v12LJr_IXHiWtwH6fn9Cg4T9Ti5ztzN5wM6ANOsXM0L4Dz26_pgC6AQgi3bdVQUfJM8mDFquOkODEtPdtcTUC5FVx37T-z16AJjuYwiQ6ad9WxFA5kMUBUWytc_uIyPXdSq8OVS7R_le6LlOK-m4GI6MZEmSRL1h205wJW1H-4s61acl-T6FFu3QQPsuMPNZlZfxP1-yvyjFkyK7e2Yj2sftEFNuHgBa-xrPYVBXWtQ04EX3kb06OSf48tEsFi3xoJzPAUXoFNUkuqbulWSXB7qSGQ
+

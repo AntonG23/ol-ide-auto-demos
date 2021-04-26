@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="AS400-COBOL-RPC" tests="1" time="3.258">
+  <testsuite name="as400-cobol-rpc-item" id="910b8d37-473b-431f-a8fb-42df109e4310" timestamp="2021-02-21T15:04:09.904Z" tests="2" failures="0" errors="0" time="1.629">
+    <testcase name="Successful POST request" time="1.629" classname="As400CobolRpc"/>
+    <testcase name="Assert by values" time="1.629" classname="As400CobolRpc"/>
+  </testsuite>
+</testsuites>

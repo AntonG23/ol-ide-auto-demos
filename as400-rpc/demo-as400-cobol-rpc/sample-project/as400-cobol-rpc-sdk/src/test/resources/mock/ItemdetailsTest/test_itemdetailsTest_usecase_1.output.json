@@ -1,0 +1,13 @@
+  {
+    "itemNum" : 1000,
+    "itemRecord" : {
+      "itemName" : "Kid Guitar",
+      "description" : "Kids Guitar - Musical Toys",
+      "weight" : 200
+    },
+    "shipping" : {
+      "shippingMethod" : "AIR MAIL",
+      "days" : 2
+    }
+  }
+
