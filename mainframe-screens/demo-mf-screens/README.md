@@ -8,7 +8,7 @@ This exercise will develop yours skill with OpenLegacy IDE by creating simple Ja
 
 ## Pre-Requirements
 
-OpenLegacy IDE 4.5.8 (Full installation including JDK and all Maven dependencies).
+OpenLegacy IDE 4.6.12 (Full installation including JDK and all Maven dependencies).
 Internet Connection
 
 ## Exercise Definition
