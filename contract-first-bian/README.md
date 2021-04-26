@@ -47,7 +47,7 @@ Create an api from BIAN contract on top of cics SDK.
 5. Click **OK**
 6. Right click on `cics-account-api` → openlegacy → Generate Sevice from Swagger Specification. 
 7. Click **Browse** and choose `CurrentAccount.json` from its location. 
-![service from spec1](/assets/screenshots/api-swagger_1.png) ![service from spec2](/assets/screenshots/api-swagger.png)
+![service from spec1](./assets/screenshots/api-swagger_1.png) ![service from spec2](./assets/screenshots/api-swagger.png)
 
 ### Step 4: Map The Service Structure to The Entity Structure
 In this demo, we will work on the `RetrieveCurrentAccountService.java`.
@@ -114,12 +114,12 @@ In this demo, we will work on the `RetrieveCurrentAccountService.java`.
     
 - Go to `src/main/java/com/cics_account_api/openlegacy/services/RetrieveCurrentAccountService.java`, and replace its output with the business entity we just created - `Response200CurrentAccount.java` .
 Your Input/Output tab should look like this:
-![new output](/assets/screenshots/bian-io.png)
+![new output](./assets/screenshots/bian-io.png)
 
 
 3. Go to the Maping tab.
 - Add The `Gactcs.java` and `Response200CurrentAccount.java` entities to the entities section. 
-![new output](/assets/screenshots/add-entities.png)
+![new output](./assets/screenshots/add-entities.png)
 
 - In the input mapping map `gactcs9.inPut.actiAccountId` to `crReferenceId`. 
 
@@ -156,7 +156,7 @@ Your Input/Output tab should look like this:
 
 The mapping tab should look like this:
 
-![new output](/assets/screenshots/mapping-tab.png)
+![new output](./assets/screenshots/mapping-tab.png)
 
 
 ### Step 5: Test The API
