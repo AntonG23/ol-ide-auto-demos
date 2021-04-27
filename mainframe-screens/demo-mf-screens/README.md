@@ -247,7 +247,7 @@ We can extend this test suite with additional unit tests to validate our connect
 4. **Click** on the API we've created → Try it out
 
    1. Set a loanNumber to 1000
-   2. You should see successful respond returned directly from the  mainframe screens program
+   2. You should see successful response returned directly from the Mainframe Screens program
 
 ![Screenshot](./assets/images/step7.gif)
 
