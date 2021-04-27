@@ -198,7 +198,7 @@ In run-time, when the application starts, OpenLegacy builds a tree representing 
 
 ![Screenshot](./assets/images/4-5.PNG)
 
- > **_NOTE:_** Accessed from - this is the name of the previous screen from which       the present screen is accessed. You can click the drop down arrow to see the list       of available screens, or Browse to search for a specific screen Assigned       fields -  when the navigation to the present screen requires specific values to be       specified in fields on the Accessed from screen, these fields need to be added as       an array to the Assigned Fields attribute.
+ > **_NOTE:_** Accessed from - this is the name of the previous screen from which       the present screen is accessed. You can click the drop down arrow to see the list       of available screens, or Browse to search for a specific screen. Assigned       fields -  when the navigation to the present screen requires specific values to be       specified in fields on the Accessed from screen, these fields need to be added as       an array to the Assigned Fields attribute.
 
 ## Step 5 – Create a JUnit Test
 By default, when generating a Java model (entity), a JUnit test is automatically generated.
