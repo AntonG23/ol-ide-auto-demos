@@ -1,10 +1,10 @@
-# Mainframe Screens SDK Exercise
+# Mainframe Screens Project Exercise
 
 ![Screenshot](./assets/images/mainframe-3270.png)
 
 ## Introduction
 
-This exercise will develop your skills with the OpenLegacy IDE by creating simple Java entities from 3270 screens from a Mainframe host.
+This exercise will develop your skills with the OpenLegacy IDE by creating simple Java entities from 3270 screens from a Mainframe host and then exposing them as a REST API to the digital world.
 
 ## Pre-Requirements
 
@@ -19,6 +19,9 @@ Internet Connection
   - Develop JUnit tests on the fly.
   - Test the connectivity and data retrieval from the Mainframe host.
   - You will use JUnit tests to test the SDK and invoke the response.
+  - Create a new API Project
+  - Create an API Service from the SDK
+  - Run & Test the API 
 
 ## Step 1 – Create a New SDK Project
 
